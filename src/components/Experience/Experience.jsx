@@ -69,7 +69,7 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 animate-pulse">
-            My Experience
+            MY EXPERIENCE
           </h2>
           <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
             A blend of professional industry experience and strong academic foundation.

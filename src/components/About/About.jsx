@@ -19,7 +19,7 @@ const About = () => {
         {/* Text */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-[#A855F7]">
-            About Me
+            ABOUT ME
           </h2>
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
             I'm <span className="text-white font-semibold">Arun Vasam</span>, a
