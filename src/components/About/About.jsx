@@ -48,7 +48,7 @@ const About = () => {
             "Great code is not just about functionality, but readability and scalability."
           </blockquote>
 
-          <p className="mt-6 text-sm text-gray-500 italic">~ Arun Vasam</p>
+          {/* <p className="mt-6 text-sm text-gray-500 italic">~ Arun Vasam</p> */}
         </motion.div>
       </div>
     </section>

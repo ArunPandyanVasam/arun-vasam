@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = ["Home", "About", "Experience", "Projects", "Services", "Contact"];
+  const navLinks = ["Home", "About", "Experience", "Projects", "Contact"];
 
   useEffect(() => {
     const handleResize = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
               <Link
                 to={item.toLowerCase()}
                 smooth={true}
-                duration={500}
+                // duration={500}
                 offset={-70}
                 className="cursor-pointer"
                 activeClass="text-[#A855F7]"
