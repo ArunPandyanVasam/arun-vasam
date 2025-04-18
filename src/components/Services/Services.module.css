@@ -1,0 +1,79 @@
+/* Flip Card Styling */
+.flipCard {
+    perspective: 1500px;
+  }
+  
+  .flipInner {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+  }
+  
+  .flipCard:hover .flipInner {
+    transform: rotateY(180deg);
+  }
+  
+  .flipFront,
+  .flipBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+  }
+  
+  .flipBack {
+    transform: rotateY(180deg);
+  }
+  
+  /* Parallax Background Shapes */
+  .parallaxBg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .shape {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    opacity: 0.2;
+    animation: float 20s ease-in-out infinite alternate;
+  }
+  
+  .shape.one {
+    width: 500px;
+    height: 500px;
+    background: #9333ea;
+    top: -100px;
+    left: -120px;
+  }
+  
+  .shape.two {
+    width: 320px;
+    height: 320px;
+    background: #a855f7;
+    bottom: -80px;
+    right: -60px;
+  }
+  
+  .shape.three {
+    width: 280px;
+    height: 280px;
+    background: #ec4899;
+    top: 200px;
+    right: 100px;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-25px) rotate(3deg);
+    }
+  }
+  
