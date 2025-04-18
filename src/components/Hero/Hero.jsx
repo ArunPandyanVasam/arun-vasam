@@ -1,32 +1,45 @@
 import React from "react";
-import styles from "./Hero.module.css"; // For custom styles if needed
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-[80vh] sm:h-[90vh] flex items-center justify-center text-center text-white">
+    <section className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] h-[80vh] sm:h-[90vh] flex items-center justify-center text-center text-white overflow-hidden">
+      {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
+        className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
         style={{
           backgroundImage: "url('/assets/images/avatar.jpg')",
-          filter: "brightness(50%)", // Adds a dimmed effect for better text visibility
+          filter: "brightness(35%)", // Dim the image further for better contrast
         }}
       ></div>
-      <div className="relative z-10 px-6 md:px-12 max-w-2xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-wide text-shadow">
-          Hello, I'm Arun Vasam
+
+      {/* Content Container */}
+      <div className="relative z-10 px-6 md:px-12 max-w-2xl mx-auto text-shadow">
+        {/* Heading */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight sm:tracking-normal md:tracking-wide text-white">
+          Hello, I'm <span className="text-[#FFBB00]">Arun Vasam</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 tracking-wide text-shadow">
-          A passionate developer who builds amazing web experiences.
+
+        {/* Subheading */}
+        <p className="text-lg sm:text-xl md:text-2xl font-medium mb-8 tracking-wide text-white opacity-90">
+          A software developer creating innovative web experiences with clean code and thoughtful design.
         </p>
-        <div className="mt-6">
+
+        {/* Call to Action Button */}
+        <div className="mt-8">
           <a
             href="#projects"
-            className="inline-block bg-[#A855F7] text-white py-3 px-6 rounded-lg text-xl font-semibold hover:bg-[#9333EA] transition-all duration-300 transform hover:scale-105"
+            className="inline-block bg-[#FFBB00] text-[#111111] py-3 px-8 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#FF9900] ease-in-out"
           >
             View My Work
           </a>
         </div>
       </div>
+
+      {/* Animated Gradient Border Effect */}
+      <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[2px] bg-gradient-to-r from-[#FFBB00] to-[#9333EA] animate-pulse opacity-60"></div>
+
+      {/* Subtle Parallax Effect */}
+      <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[150px] bg-gradient-to-b from-transparent to-[#111111] opacity-70"></div>
     </section>
   );
 };
