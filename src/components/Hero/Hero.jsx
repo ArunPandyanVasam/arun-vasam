@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative z-10 px-6 md:px-12 max-w-2xl mx-auto text-shadow">
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight sm:tracking-normal md:tracking-wide text-white">
-          Hello, I'm <span className="text-[#FFBB00]">Arun Vasam</span>
+          Hello, I'm <span className="text-[#00B8D9]">Arun Vasam</span>
         </h1>
 
         {/* Subheading */}
@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="mt-8">
           <a
             href="#projects"
-            className="inline-block bg-[#FFBB00] text-[#111111] py-3 px-8 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#FF9900] ease-in-out"
+            className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#00A1B8] ease-in-out"
           >
             View My Work
           </a>
@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
 
       {/* Animated Gradient Border Effect */}
-      <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[2px] bg-gradient-to-r from-[#FFBB00] to-[#9333EA] animate-pulse opacity-60"></div>
+      <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[2px] bg-gradient-to-r from-[#00B8D9] to-[#9333EA] animate-pulse opacity-60"></div>
 
       {/* Subtle Parallax Effect */}
       <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[150px] bg-gradient-to-b from-transparent to-[#111111] opacity-70"></div>
