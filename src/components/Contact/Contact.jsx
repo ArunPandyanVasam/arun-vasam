@@ -40,7 +40,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 md:px-12 bg-[#111111] text-white">
+    <section
+      id="contact"
+      className="py-20 px-6 md:px-12 bg-[#111111] text-white"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <motion.div
@@ -54,12 +57,13 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            I’d love to hear from you! Whether you’re interested in working together or just want to chat, feel free to reach out.
+            I’d love to hear from you! Whether you’re interested in working
+            together or just want to chat, feel free to reach out.
           </p>
         </motion.div>
 
         {/* Contact Form */}
-        <div className="max-w-2xl mx-auto bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-[#2a2a2a] hover:shadow-2xl transition-all duration-300">
+        <div className="max-w-2xl mx-auto bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-[#2a2a2a] transition-all duration-300">
           {isSubmitted ? (
             <motion.div
               className="text-center"
@@ -93,7 +97,9 @@ const Contact = () => {
                   className="w-full mt-2 p-3 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:border-[#A855F7] transition-all duration-300"
                   placeholder="Your Name"
                 />
-                {errors.name && <p className="text-red-500 text-sm mt-2">{errors.name}</p>}
+                {errors.name && (
+                  <p className="text-red-500 text-sm mt-2">{errors.name}</p>
+                )}
               </div>
 
               {/* Email Field */}
@@ -113,7 +119,9 @@ const Contact = () => {
                   className="w-full mt-2 p-3 bg-[#2a2a2a] border border-[#3a3a3a] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:border-[#A855F7] transition-all duration-300"
                   placeholder="Your Email"
                 />
-                {errors.email && <p className="text-red-500 text-sm mt-2">{errors.email}</p>}
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+                )}
               </div>
 
               {/* Message Field */}
@@ -133,7 +141,9 @@ const Contact = () => {
                   rows="6"
                   placeholder="Your Message"
                 />
-                {errors.message && <p className="text-red-500 text-sm mt-2">{errors.message}</p>}
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-2">{errors.message}</p>
+                )}
               </div>
 
               {/* Submit Button */}
