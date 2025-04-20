@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] h-[80vh] sm:h-[90vh] flex items-center justify-center text-center text-white overflow-hidden">
+    <section id="home" className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] h-[80vh] sm:h-[90vh] flex items-center justify-center text-center text-white overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"

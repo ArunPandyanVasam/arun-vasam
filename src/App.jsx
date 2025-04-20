@@ -10,24 +10,14 @@ import Projects from "./components/Projects/Projects";
 const App = () => {
   return (
     <div>
-      <Navbar /> {/* Place Navbar here */}
-      <section id="home">
-        <Hero />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="experience">
-        <Experience />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      <Footer />
-    </div>
+    <Navbar />
+    <Hero />
+    <About />
+    <Experience />
+    <Projects />
+    <Contact />
+    <Footer />
+  </div>
   );
 };
 
