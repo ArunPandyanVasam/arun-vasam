@@ -1,0 +1,27 @@
+[
+    {
+      "title": "AI-Powered Sales Forecasting Tool",
+      "description": "Built a smart inventory and forecasting solution using Flask and React, enabling real-time predictions and dynamic model training.",
+      "tech": ["React", "Flask", "Scikit-learn"],
+      "github": "https://github.com/your-username/forecasting-tool",
+      "demo": "https://forecasting-demo.vercel.app",
+      "image": "/assets/images/avatar.jpg"
+    },
+    {
+      "title": "Solo Travel UI",
+      "description": "A smooth, responsive frontend experience for solo travelers with engaging UI, built using React and Tailwind.",
+      "tech": ["React", "Tailwind CSS"],
+      "github": "https://github.com/your-username/solo-travel-ui",
+      "demo": "https://solo-travel-ui.netlify.app",
+      "image": "/assets/images/avatar.jpg"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "My branded, personal website representing my work and identity as a developer and creative builder.",
+      "tech": ["React", "Vite", "Tailwind CSS"],
+      "github": "https://github.com/your-username/portfolio",
+      "demo": "https://yourname.dev",
+      "image": "/assets/images/avatar.jpg"
+    }
+  ]
+  
