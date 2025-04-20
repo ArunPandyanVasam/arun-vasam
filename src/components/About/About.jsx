@@ -13,7 +13,7 @@ const About = () => {
           className="w-full md:w-1/2 flex justify-center"
         >
           <img
-            src="/assets/images/avatar.jpg"
+            src="/assets/about/aboutImage.png"
             alt="Arun Vasam"
             className="w-72 h-72 rounded-full object-cover shadow-xl border-4 border-[#A855F7]"
           />

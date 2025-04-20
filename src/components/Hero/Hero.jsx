@@ -7,7 +7,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
         style={{
-          backgroundImage: "url('/assets/images/avatar.jpg')",
+          backgroundImage: "url('/assets/hero/avatar.jpg')",
           filter: "brightness(35%)", // Dim the image further for better contrast
         }}
       ></div>

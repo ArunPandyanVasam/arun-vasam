@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
           <div className="text-center sm:text-left mb-4 sm:mb-0">
-            <h3 className="text-xl font-bold text-[#A855F7]">
-              Get in Touch
-            </h3>
-            <p className="text-gray-400 mt-2">Feel free to reach out anytime!</p>
+            <h3 className="text-xl font-bold text-[#A855F7]">Get in Touch</h3>
+            <p className="text-gray-400 mt-2">
+              Feel free to reach out anytime!
+            </p>
           </div>
 
           <div className="flex space-x-6 justify-center sm:justify-start">
@@ -43,7 +43,8 @@ const Footer = () => {
 
         <div className="border-t border-[#2a2a2a] pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} ARUNVASAM. All Rights Reserved.
+            {/* &copy; {new Date().getFullYear()} ARUNVASAM. All Rights Reserved. */}
+            Let's build something great together!
           </p>
         </div>
       </div>

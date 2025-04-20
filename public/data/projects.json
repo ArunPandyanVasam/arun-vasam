@@ -5,7 +5,7 @@
       "tech": ["React", "Flask", "Scikit-learn"],
       "github": "https://github.com/your-username/forecasting-tool",
       "demo": "https://forecasting-demo.vercel.app",
-      "image": "/assets/images/avatar.jpg"
+      "image": "/assets/projects/avatar.jpg"
     },
     {
       "title": "Solo Travel UI",
@@ -13,7 +13,7 @@
       "tech": ["React", "Tailwind CSS"],
       "github": "https://github.com/your-username/solo-travel-ui",
       "demo": "https://solo-travel-ui.netlify.app",
-      "image": "/assets/images/avatar.jpg"
+      "image": "/assets/projects/avatar.jpg"
     },
     {
       "title": "Portfolio Website",
@@ -21,7 +21,7 @@
       "tech": ["React", "Vite", "Tailwind CSS"],
       "github": "https://github.com/your-username/portfolio",
       "demo": "https://yourname.dev",
-      "image": "/assets/images/avatar.jpg"
+      "image": "/assets/projects/avatar.jpg"
     }
   ]
   
