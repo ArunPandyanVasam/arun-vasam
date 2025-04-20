@@ -1,26 +1,22 @@
 [
   {
-    "degree": "Master of Science in Data Science",
-    "institution": "ABC University",
-    "duration": "2021 - 2023",
-    "image": "/assets/education/avatar.png",
+    "degree": "Diploma in Computer Programming",
+    "institution": "Sheridan College Institute of Technology and Advanced Learning",
+    "duration": "January, 2023 - April, 2024",
+    "image": "/assets/education/myworthyhome.png",
     "description": [
-      "Specialized in advanced machine learning, big data, and AI methodologies.",
-      "Focused on predictive analytics and real-time data processing techniques.",
-      "Worked on various data-driven research projects and thesis involving AI and ML.",
-      "Graduated with honors in a cohort of 40+ students."
+      "Studied object-oriented programming, data structures, and full-stack development.",
+      "Studied object-oriented programming, data structures, and full-stack development."
     ]
   },
   {
-    "degree": "Bachelor of Science in Computer Science",
-    "institution": "XYZ University",
-    "duration": "2017 - 2021",
-    "image": "/assets/education/avatar.png",
+    "degree": "Bachelor of Technology in Civil Engineering",
+    "institution": "Vignan Institute of Technology and Science",
+    "duration": "June, 2017 - July, 2021",
+    "image": "/assets/education/myworthyhome.png",
     "description": [
-      "Focused on software development, AI, and data science.",
-      "Built multiple projects in software engineering and machine learning.",
-      "Graduated with honors and completed internship in a leading tech company.",
-      "Worked on several capstone projects related to web development and AI."
+      "Learned problem-solving, structural analysis, and technical applications in engineering.",
+      "Learned problem-solving, structural analysis, and technical applications in engineering."
     ]
   }
 ]

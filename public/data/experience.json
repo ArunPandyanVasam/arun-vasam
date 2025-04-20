@@ -1,26 +1,25 @@
 [
   {
-    "title": "Software Developer",
-    "company": "Pepper Inc.",
-    "duration": "2023 - Present",
-    "image": "/assets/experience/avatar.png",
+    "title": "WordPress Development Intern",
+    "company": "My Worthy Home, Remote",
+    "duration": "Jan, 2025 - Mar, 2025",
+    "image": "/assets/experience/myworthyhome.png",
     "description": [
-      "Developing and deploying AI-powered solutions for real-time sales forecasting.",
-      "Optimizing inventory management through predictive analytics.",
-      "Collaborating with cross-functional teams to enhance data-driven decision-making.",
-      "Implementing machine learning models for dynamic sales prediction."
+      "Developed and customized WordPress themes and plugins using PHP, JavaScript, and CSS to enhance website functionality.",
+      "Integrated REST APIs to improve website performance and user experience.",
+      "Implemented WordPress security best practices to ensure data protection and site stability."
     ]
   },
   {
-    "title": "Frontend Developer",
-    "company": "XYZ Tech Solutions",
-    "duration": "2021 - 2023",
-    "image": "/assets/experience/avatar.png",
+    "title": "Jr. Developer",
+    "company": "Infotrack Systems, India",
+    "duration": "Oct, 2021 - Nov, 2022",
+    "image": "/assets/experience/myworthyhome.png",
     "description": [
-      "Built responsive web applications using React.",
-      "Enhanced user experiences across platforms by implementing intuitive UI/UX.",
-      "Worked on the integration of RESTful APIs to connect frontend with backend systems.",
-      "Collaborated closely with design and product teams to iterate on features."
+      "Developed HR & Payroll software features in C/C++, improving processing efficiency by 10%.",
+      "Optimized payroll processing using real-time software principles.",
+      "Managed software deliveries using Git and agile methodologies.",
+      "Led performance and scalability discussions for software modules."
     ]
   }
 ]
