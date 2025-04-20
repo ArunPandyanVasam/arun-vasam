@@ -1,14 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaGithub, FaExternalLinkAlt, FaReact, FaPython } from "react-icons/fa";
-import { SiFlask, SiTailwindcss, SiVite, SiScikitlearn } from "react-icons/si";
-
-const iconMap = {
-  React: <FaReact className="text-cyan-400" />,
-  Flask: <SiFlask className="text-gray-300" />,
-  "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
-  Vite: <SiVite className="text-purple-400" />,
-  "Scikit-learn": <SiScikitlearn className="text-yellow-300" />,
-};
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -59,9 +50,8 @@ const Projects = () => {
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-[#222] px-2 py-1 rounded flex items-center gap-1"
+                      className="bg-[#222] px-2 py-1 rounded"
                     >
-                      {iconMap[tech] || null}
                       {tech}
                     </span>
                   ))}
