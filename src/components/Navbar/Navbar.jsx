@@ -35,7 +35,7 @@ const Navbar = () => {
             >
               <Link
                 to={item.toLowerCase()}
-                smooth={true}
+                // smooth={true}
                 // duration={500}
                 offset={-70}
                 className="cursor-pointer"
@@ -75,8 +75,8 @@ const Navbar = () => {
               <li key={item} className="uppercase tracking-wider">
                 <Link
                   to={item.toLowerCase()}
-                  smooth={true}
-                  duration={500}
+                  // smooth={true}
+                  // duration={500}
                   offset={-70}
                   activeClass="text-[#A855F7]"
                   spy={true}
