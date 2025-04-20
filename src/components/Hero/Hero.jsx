@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] h-[80vh] sm:h-[90vh] flex items-center justify-center text-center text-white overflow-hidden">
+    <section
+      id="home"
+      className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] h-[80vh] sm:h-[90vh] flex items-center justify-center text-center text-white overflow-hidden"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out"
@@ -21,17 +25,18 @@ const Hero = () => {
 
         {/* Subheading */}
         <p className="text-lg sm:text-xl md:text-2xl font-medium mb-8 tracking-wide text-white opacity-90">
-          A software developer creating innovative web experiences with clean code and thoughtful design.
+          A software developer creating innovative web experiences with clean
+          code and thoughtful design.
         </p>
 
         {/* Call to Action Button */}
         <div className="mt-8">
-          <a
-            href="#projects"
-            className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#00A1B8] ease-in-out"
+          <Link
+            to="projects"
+            className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#00A1B8] ease-in-out cursor-pointer"
           >
             View My Work
-          </a>
+          </Link>
         </div>
       </div>
 
