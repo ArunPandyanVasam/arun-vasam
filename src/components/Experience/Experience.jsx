@@ -1,25 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
+// Import the data directly
+import workExperienceData from "../../data/experience.json";
+import educationData from "../../data/education.json";
+
 const Experience = () => {
-  const [workExperience, setWorkExperience] = useState([]);
-  const [education, setEducation] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const workRes = await fetch("/data/experience.json");
-      const workData = await workRes.json();
-      setWorkExperience(workData);
-
-      const eduRes = await fetch("/data/education.json");
-      const eduData = await eduRes.json();
-      setEducation(eduData);
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <section
       id="experience"
@@ -55,7 +42,7 @@ const Experience = () => {
             >
               Work Experience
             </motion.h3>
-            {workExperience.map((item, index) => (
+            {workExperienceData.map((item, index) => (
               <motion.div
                 key={index}
                 className="flex gap-5 mb-10 items-start"
@@ -93,7 +80,7 @@ const Experience = () => {
             >
               Education
             </motion.h3>
-            {education.map((item, index) => (
+            {educationData.map((item, index) => (
               <motion.div
                 key={index}
                 className="flex gap-5 mb-10 items-start"
