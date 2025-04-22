@@ -22,7 +22,7 @@ const Footer = () => {
               <MdEmail size={24} />
             </a>
             <a
-              href="https://github.com/yourgithub"
+              href="https://github.com/ArunPandyanVasam"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#A855F7] hover:text-white transition duration-300"
@@ -30,7 +30,7 @@ const Footer = () => {
               <FaGithub size={24} />
             </a>
             <a
-              href="https://www.linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/arun-vasam/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#A855F7] hover:text-white transition duration-300"
@@ -38,7 +38,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://twitter.com/yourtwitter"
+              href="https://x.com/APandyan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#A855F7] hover:text-white transition duration-300"
