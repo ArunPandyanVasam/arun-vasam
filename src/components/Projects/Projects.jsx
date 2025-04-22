@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import projects from "../../data/projects.json";
+
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetch("/data/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data))
-      .catch((err) => console.error("Failed to load projects.json", err));
-  }, []);
-
   return (
     <section
       id="projects"
@@ -48,10 +41,7 @@ const Projects = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center items-center text-xs text-gray-300 mb-5">
                   {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="bg-[#222] px-2 py-1 rounded"
-                    >
+                    <span key={i} className="bg-[#222] px-2 py-1 rounded">
                       {tech}
                     </span>
                   ))}
