@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = ["Home", "About", "Experience", "Projects", "Contact"];
+  const navLinks = ["Home", "About", "Experience", "Projects"];
 
   useEffect(() => {
     const handleResize = () => {
