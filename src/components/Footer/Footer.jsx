@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -14,6 +15,12 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-6 justify-center sm:justify-start">
+            <a
+              href="mailto:arunpandyanv@gmail.com.com?subject=Hello%20Arunvasam&body=I%20visited%20your%20portfolio%20and%20wanted%20to%20connect!"
+              className="text-[#A855F7] hover:text-white transition duration-300"
+            >
+              <MdEmail size={24} />
+            </a>
             <a
               href="https://github.com/yourgithub"
               target="_blank"
