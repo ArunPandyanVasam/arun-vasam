@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
-// Import the data directly
 import workExperienceData from "../../data/experience.json";
 import educationData from "../../data/education.json";
 
@@ -13,7 +12,6 @@ const Experience = () => {
       className="py-24 px-6 md:px-12 bg-gradient-to-br from-[#0d0d0d] to-[#1e1e1e] text-white relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* Title */}
         <motion.div
           className="mb-16 text-center"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -30,9 +28,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* Content Grid */}
         <div className="grid md:grid-cols-2 gap-16">
-          {/* Work Experience */}
           <div>
             <motion.h3
               className="text-2xl font-bold text-[#A855F7] mb-6"
@@ -70,7 +66,6 @@ const Experience = () => {
             ))}
           </div>
 
-          {/* Education */}
           <div>
             <motion.h3
               className="text-2xl font-bold text-[#A855F7] mb-6"
