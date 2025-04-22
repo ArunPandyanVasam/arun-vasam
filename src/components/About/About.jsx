@@ -45,7 +45,7 @@ const About = () => {
           </p>
 
           <blockquote className="mt-6 text-gray-400 italic border-l-4 border-[#A855F7] pl-4">
-            "Great code is not just about functionality, but readability and scalability."
+            "Technology is more than code — it's a tool for solving real-world problems."
           </blockquote>
 
           {/* <p className="mt-6 text-sm text-gray-500 italic">~ Arun Vasam</p> */}

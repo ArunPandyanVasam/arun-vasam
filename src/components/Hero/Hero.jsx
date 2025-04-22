@@ -16,13 +16,12 @@ const Hero = () => {
       ></div>
 
       <div className="relative z-10 px-6 md:px-12 max-w-2xl mx-auto text-shadow">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 tracking-tight sm:tracking-normal md:tracking-wide text-white">
+        <h1 className="text-4xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6 tracking-tight sm:tracking-normal md:tracking-wide text-white">
           Hello, I'm <span className="text-[#00B8D9]">Arun Vasam</span>
         </h1>
 
         <p className="text-lg sm:text-xl md:text-2xl font-medium mb-8 tracking-wide text-white opacity-90">
-          A software developer creating innovative web experiences with clean
-          code and thoughtful design.
+        A Software Developer dedicated to solving real-world problems through innovative, purposeful solutions.
         </p>
 
         <div className="mt-8">
@@ -30,7 +29,7 @@ const Hero = () => {
             to="projects"
             className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-xl font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#00A1B8] ease-in-out cursor-pointer"
           >
-            View My Work
+            Check out my work below
           </Link>
         </div>
       </div>
