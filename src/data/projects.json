@@ -1,7 +1,7 @@
 [
   {
     "title": "Dynamic Surge Pricing",
-    "description": "Developed a dynamic surge pricing app using Flask and React that calculates real-time pricing based on weather, offering users interactive and location-based price insights.",
+    "description": "Developed a dynamic surge pricing app that adjusts prices in real-time based on weather and location. The app educates users on how food delivery platforms set prices, offering interactive insights into how external factors impact cost, and raising awareness of dynamic pricing in the industry.",
     "tech": [
       "Python",
       "React",
