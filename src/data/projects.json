@@ -1,5 +1,17 @@
 [
   {
+    "title": "AI-Demand forecast",
+    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
+    "demo": "https://gamemultiplication.netlify.app/",
+    "image": "/assets/projects/avatar.jpg"
+  },
+  {
     "title": "Dynamic Surge Pricing",
     "description": "Developed a dynamic surge pricing app that adjusts prices in real-time based on weather and location. The app educates users on how food delivery platforms set prices, offering interactive insights into how external factors impact cost, and raising awareness of dynamic pricing in the industry.",
     "tech": [
