@@ -2,7 +2,6 @@ import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import projects from "../../data/projects.json";
 
-
 const Projects = () => {
   return (
     <section
@@ -25,34 +24,39 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-xl border border-[#2a2a2a] hover:border-[#A855F7] transition-transform hover:scale-[1.015]"
+              className="overflow-hidden rounded-2xl shadow-xl border border-[#2a2a2a] hover:border-[#A855F7] transition-transform hover:scale-[1.015] bg-[#1a1a1a]"
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-[350px] object-cover transform group-hover:scale-110 transition duration-700"
+                className="w-full h-[220px] object-cover"
               />
-              <div className="absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center text-center p-6">
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400 mb-2">
+
+              <div className="p-6 flex flex-col gap-4">
+                <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400">
                   {project.title}
                 </h3>
-                <p className="text-sm text-gray-300 mb-4">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 justify-center items-center text-xs text-gray-300 mb-5">
+
+                <p className="text-sm text-gray-300">{project.description}</p>
+
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="bg-[#222] px-2 py-1 rounded">
+                    <span
+                      key={i}
+                      className="bg-[#2a2a2a] text-gray-300 px-2 py-1 rounded text-xs"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-6">
+
+                <div className="flex gap-6 mt-4">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     title="GitHub Repo"
-                    className="text-white text-2xl hover:text-[#A855F7] transition"
+                    className="text-white text-xl hover:text-[#A855F7] transition"
                   >
                     <FaGithub />
                   </a>
@@ -61,7 +65,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Live Demo"
-                    className="text-white text-2xl hover:text-[#A855F7] transition"
+                    className="text-white text-xl hover:text-[#A855F7] transition"
                   >
                     <FaExternalLinkAlt />
                   </a>
