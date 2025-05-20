@@ -43,7 +43,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-6 md:px-12 bg-gradient-to-br from-[#121212] to-[#1c1c1c] text-white"
+      className="py-24 px-6 md:px-12 bg-black text-white"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div

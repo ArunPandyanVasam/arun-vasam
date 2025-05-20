@@ -9,7 +9,8 @@ const About = () => {
   const tabs = ["Story", "Skills", "Tools"];
 
   const tabContent = {
-    Story: `Hi, I'm Arun Vasam — a passionate developer who thrives on turning ideas into practical, elegant digital experiences. With a strong foundation in AI and smart technologies, I specialize in building dynamic tools that not only function but solve real-world challenges. Whether it’s a forecasting model or a responsive user interface, I bring logic and creativity together to craft meaningful solutions.`,
+    Story: `I'm an aspiring software developer with a solid foundation in core programming principles and a strong passion for solving real-world problems through code. I recently completed my Diploma in Computer Programming at Sheridan College, where I learned OOP, DSA, DBMS, Computer Networks, and full-stack development.
+            While I may be at the beginning of my professional journey, I'm constantly building projects, learning new technologies, and refining my skills. I'm now looking for an opportunity to join a forward-thinking team where I can contribute meaningfully while growing as a developer.`,
 
     Skills: `• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control`,
 
@@ -32,22 +33,22 @@ const About = () => {
   const socialLinks = [
     {
       label: "GitHub",
-      href: "https://github.com/arunvasam",
+      href: "https://github.com/ArunPandyanVasam",
       icon: <FaGithub size={24} />,
     },
     {
       label: "LinkedIn",
-      href: "https://linkedin.com/in/arunvasam",
+      href: "https://www.linkedin.com/in/arun-vasam/",
       icon: <FaLinkedin size={24} />,
     },
     {
       label: "Twitter",
-      href: "https://twitter.com/arunvasam",
+      href: "https://x.com/APandyan",
       icon: <FaTwitter size={24} />,
     },
     {
       label: "Email",
-      href: "mailto:arunvasam@email.com",
+      href: "mailto:arunpandyanv@gmail.com",
       icon: <MdEmail size={24} />,
     },
   ];
