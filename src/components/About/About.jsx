@@ -9,8 +9,9 @@ const About = () => {
   const tabs = ["Story", "Skills", "Tools"];
 
   const tabContent = {
-    Story: `I'm an aspiring software developer with a solid foundation in core programming principles and a strong passion for solving real-world problems through code. I recently completed my Diploma in Computer Programming at Sheridan College, where I learned OOP, DSA, DBMS, Computer Networks, and full-stack development.
-            While I may be at the beginning of my professional journey, I'm constantly building projects, learning new technologies, and refining my skills. I'm now looking for an opportunity to join a forward-thinking team where I can contribute meaningfully while growing as a developer.`,
+    Story: `I'm an aspiring software developer with a strong foundation in programming fundamentals and a deep passion for building solutions that make a real-world impact. My journey into tech began with an intense curiosity about how things work under the hood—what started as simple scripts soon evolved into full-stack applications, personal projects, and a growing appetite for continuous learning.
+            Over time, I’ve developed hands-on experience in object-oriented programming, data structures and algorithms, databases, computer networks, and modern web development. I thrive in environments that challenge me to grow and encourage creative problem-solving.
+            Currently, I'm focused on sharpening my skills, exploring new technologies, and contributing to meaningful projects. I’m excited to join a forward-thinking team where I can make an impact, collaborate with like-minded professionals, and continue evolving as a developer.`,
 
     Skills: `• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control`,
 
