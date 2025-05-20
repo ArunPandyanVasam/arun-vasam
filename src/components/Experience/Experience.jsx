@@ -19,7 +19,7 @@ const TimelineItem = ({ icon, title, subtitle, duration, description, delay }) =
     </div>
 
     {/* Card */}
-    <div className="bg-[#1c1c1c]/70 backdrop-blur-md border border-[#2a2a2a] rounded-xl p-6 shadow-lg hover:shadow-purple-800/20 transition-shadow duration-300">
+    <div className="bg-[#1c1c1c]/80 backdrop-blur-md border border-[#2a2a2a] rounded-xl p-6 shadow-lg hover:shadow-purple-700/40 transition-shadow duration-300">
       <h4 className="text-lg font-semibold text-[#A855F7]">{title}</h4>
       <p className="text-sm text-gray-300">{subtitle}</p>
       <p className="text-xs text-gray-500 mt-1">{duration}</p>
@@ -36,7 +36,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 px-6 md:px-12 bg-gradient-to-br from-[#0d0d0d] to-[#1e1e1e] text-white"
+      className="py-24 px-6 md:px-12 bg-gradient-to-br from-[#121212] to-[#1c1c1c] text-white"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div
