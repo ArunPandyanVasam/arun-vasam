@@ -24,7 +24,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-2xl border border-[#2a2a2a] bg-gradient-to-b from-[#222222] to-[#111111] shadow-[0_0_20px_#00000050] hover:shadow-[0_4px_40px_rgba(168,85,247,0.35)] transition duration-300"
+              className="overflow-hidden rounded-2xl border border-[#2a2a2a] bg-gradient-to-b from-[#222222] to-[#111111] hover:shadow-[0_2px_20px_rgba(168,85,247,0.35)] transition duration-300"
             >
               <a
                 href={project.demo}
