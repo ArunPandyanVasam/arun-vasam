@@ -24,15 +24,22 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-2xl border border-[#2a2a2a] bg-gradient-to-b from-[#1a1a1a] to-[#111111] shadow-[0_0_20px_#00000050] hover:shadow-[0_0_30px_#A855F750] transition duration-300"
+              className="overflow-hidden rounded-2xl border border-[#2a2a2a] bg-gradient-to-b from-[#222222] to-[#111111] shadow-[0_0_20px_#00000050] hover:shadow-[0_4px_40px_rgba(168,85,247,0.35)] transition duration-300"
             >
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-[220px] object-cover transform hover:scale-105 transition duration-500"
-                />
-              </div>
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Live demo of ${project.title}`}
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-[220px] object-cover transform hover:scale-105 transition duration-500"
+                  />
+                </div>
+              </a>
 
               <div className="p-6 flex flex-col gap-4">
                 <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400">
@@ -62,6 +69,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="GitHub Repo"
+                    aria-label={`GitHub repository for ${project.title}`}
                     className="text-white text-xl hover:text-[#A855F7] transition"
                   >
                     <FaGithub />
@@ -71,6 +79,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Live Demo"
+                    aria-label={`Live demo for ${project.title}`}
                     className="text-white text-xl hover:text-[#A855F7] transition"
                   >
                     <FaExternalLinkAlt />

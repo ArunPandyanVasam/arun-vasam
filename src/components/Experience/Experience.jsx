@@ -5,7 +5,14 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 import workExperienceData from "../../data/experience.json";
 import educationData from "../../data/education.json";
 
-const TimelineItem = ({ icon, title, subtitle, duration, description, delay }) => (
+const TimelineItem = ({
+  icon,
+  title,
+  subtitle,
+  duration,
+  description,
+  delay,
+}) => (
   <motion.div
     className="relative pl-12 pb-12 border-l border-purple-600"
     initial={{ opacity: 0, y: 40 }}
@@ -51,7 +58,8 @@ const Experience = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mx-auto my-4 rounded-full" />
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            A blend of professional industry experience and strong academic foundation.
+            A blend of professional industry experience and strong academic
+            foundation.
           </p>
         </motion.div>
 

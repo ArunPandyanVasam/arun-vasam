@@ -49,7 +49,7 @@ const Hero = () => {
             offset={-80}
             duration={500}
             tabIndex={0}
-            className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-[#00A1B8] ease-in-out cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00B8D9]"
+            className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-lg font-semibold  transition-all duration-300 transform hover:scale-105  hover:bg-[#00B8D9] ease-in-out cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00B8D9]"
             aria-label="Scroll to Projects section"
           >
             Check out my work below
