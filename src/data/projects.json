@@ -1,7 +1,7 @@
 [
   {
     "title": "Multiplication Game",
-    "description": "Layout change A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
+    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
     "tech": [
       "HTML",
       "CSS",
@@ -12,27 +12,27 @@
     "image": "/assets/projects/avatar.jpg"
   },
   {
-    "title": "Dynamic Surge Pricing",
-    "description": "Developed a dynamic surge pricing app that adjusts prices in real-time based on weather and location. The app educates users on how food delivery platforms set prices, offering interactive insights into how external factors impact cost, and raising awareness of dynamic pricing in the industry.",
+    "title": "Multiplication Game",
+    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
     "tech": [
-      "Python",
-      "React",
-      "Axios",
-      "API"
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
-    "github": "https://github.com/ArunPandyanVasam/dynamic-surge-pricing-frontend",
-    "demo": "https://dynamic-surge-pricing.vercel.app/",
+    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
+    "demo": "https://gamemultiplication.netlify.app/",
     "image": "/assets/projects/avatar.jpg"
   },
   {
-    "title": "Solo Travel UI",
-    "description": "Built a solo travel single-page app in React with vehicle hosting, offering essential info and rentals in a clean interface.",
+    "title": "Multiplication Game",
+    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
     "tech": [
-      "React",
-      "Vite"
+      "HTML",
+      "CSS",
+      "JavaScript"
     ],
-    "github": "https://github.com/ArunPandyanVasam/TravelApp-Frontend",
-    "demo": "https://solotravel.netlify.app/",
+    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
+    "demo": "https://gamemultiplication.netlify.app/",
     "image": "/assets/projects/avatar.jpg"
   },
   {
