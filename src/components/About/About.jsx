@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="w-full py-20 px-6 md:px-12 bg-[#111111] text-white overflow-hidden">
+    <section
+      id="about"
+      className="w-full py-20 px-6 md:px-12 bg-[#111111] text-white overflow-hidden"
+    >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative">
         {/* Image */}
         <motion.div
@@ -44,11 +47,15 @@ const About = () => {
             I’ve had the privilege of working on projects ranging from e-commerce platforms to real-time analytics dashboards. Each project has been a unique opportunity to hone my problem-solving skills while collaborating with talented teams.
           </p>
 
-          <blockquote className="mt-6 text-gray-400 italic border-l-4 border-[#A855F7] pl-4">
+          {/* Tech Stack */}
+          <p className="mt-4 text-base sm:text-lg text-gray-300 leading-relaxed">
+            <span className="text-white font-semibold">Tech Stack:</span> React.js, Node.js, Express, MongoDB, Flask, Python, JavaScript, HTML, CSS, Git, REST APIs and more.
+          </p>
+
+          {/* Quote */}
+          <blockquote className="mt-6 text-lg text-gray-300 italic border-l-4 border-[#A855F7] pl-4">
             "Technology is more than code — it's a tool for solving real-world problems."
           </blockquote>
-
-          {/* <p className="mt-6 text-sm text-gray-500 italic">~ Arun Vasam</p> */}
         </motion.div>
       </div>
     </section>
