@@ -44,19 +44,21 @@ const Contact = () => {
       className="min-h-screen bg-[#111111] text-white flex flex-col md:flex-row"
     >
       <div
-        className="w-full md:w-[45%] h-64 md:h-auto bg-cover bg-center relative flex flex-col justify-end p-8 text-white"
+        className="w-full md:w-[45%] h-64 md:h-auto bg-cover bg-center flex items-center justify-center p-8 text-white"
         style={{
           backgroundImage: "url('/assets/hero/hero.jpg')",
         }}
       >
-        <h3 className="text-2xl md:text-3xl font-bold mb-2 drop-shadow-lg">
-          Let's grow together
-        </h3>
-        <hr className="border-[#A855F7] border-2 mb-2 w-12" />
-        <p className="text-xs md:text-sm drop-shadow-md">
-          Collaborate with us to build something amazing. Your vision deserves
-          the best support.
-        </p>
+        <div className="max-w-sm w-full">
+          <h3 className="text-2xl md:text-3xl font-bold mb-2 drop-shadow-lg">
+            Let's grow together
+          </h3>
+          <hr className="border-[#A855F7] border-2 mb-2 w-12" />
+          <p className="text-xs md:text-sm drop-shadow-md">
+            Collaborate with us to build something amazing. Your vision deserves
+            the best support.
+          </p>
+        </div>
       </div>
 
       <div className="w-full md:w-[55%] flex flex-col p-8 md:p-12">
