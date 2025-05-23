@@ -33,37 +33,56 @@ const Contact = () => {
       setErrors(formErrors);
       return;
     }
-    // Handle form submission (e.g., send data to an API or email service)
     console.log(formData);
-    setIsSubmitted(true); // Show the success message
-    setErrors({}); // Reset any existing errors
+    setIsSubmitted(true);
+    setErrors({});
   };
 
   return (
     <section
       id="contact"
-      className="py-20 px-6 md:px-12 bg-[#111111] text-white"
+      className="min-h-screen bg-[#111111] text-white flex flex-col md:flex-row"
     >
-      <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
-        <motion.div
-          className="mb-16 text-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 tracking-tight">
-            Get in Touch
-          </h2>
-          <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            I’d love to hear from you! Whether you’re interested in working
-            together or just want to chat, feel free to reach out.
-          </p>
-        </motion.div>
+      {/* Left side - image + text */}
+      <div
+        className="w-full md:w-[45%] h-64 md:h-auto bg-cover bg-center relative flex flex-col justify-end p-8 text-white"
+        style={{
+          backgroundImage: "url('/assets/hero/hero.jpg')",
+        }}
+      >
+        <h3 className="text-2xl md:text-3xl font-bold mb-2 drop-shadow-lg">
+          Let's grow together
+        </h3>
+        <hr className="border-[#A855F7] border-2 mb-2 w-12" />
+        <p className="text-xs md:text-sm drop-shadow-md">
+          Collaborate with us to build something amazing. Your vision deserves
+          the best support.
+        </p>
+      </div>
 
-        {/* Contact Form */}
-        <div className="max-w-2xl mx-auto bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-[#2a2a2a] transition-all duration-300">
+      {/* Right side */}
+      <div className="w-full md:w-[55%] flex flex-col p-8 md:p-12">
+        {/* Text on background, above the card */}
+        {!isSubmitted && (
+          <motion.div
+            className="mb-10 text-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 tracking-tight">
+              Get In Touch
+            </h2>
+            <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
+              I’d love to hear from you! Whether you’re interested in working
+              together or just want to chat, feel free to reach out.
+            </p>
+          </motion.div>
+        )}
+
+        {/* Form Card */}
+        <div className="max-w-xl w-full bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-[#2a2a2a] transition-all duration-300 mx-auto">
           {isSubmitted ? (
             <motion.div
               className="text-center"
