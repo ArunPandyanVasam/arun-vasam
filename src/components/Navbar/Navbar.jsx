@@ -21,12 +21,10 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-black shadow-md">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
         <div className="text-2xl font-bold tracking-wide text-white">
           ARUN<span className="text-[#A855F7]">VASAM</span>
         </div>
 
-        {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-10 font-medium">
           {navLinks.map((item) => (
             <li
@@ -49,7 +47,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(true)} aria-label="Open Menu">
             <Menu size={28} className="text-white" />
@@ -57,10 +54,8 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Full-Screen Overlay */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center z-50 transition-all">
-          {/* Close button */}
           <button
             onClick={() => setIsOpen(false)}
             className="absolute top-6 right-6 text-white"
@@ -69,7 +64,6 @@ const Navbar = () => {
             <X size={28} />
           </button>
 
-          {/* Mobile Nav Items */}
           <ul className="flex flex-col items-center gap-8 text-2xl font-semibold text-white">
             {navLinks.map((item) => (
               <li key={item} className="uppercase tracking-wider">
@@ -80,7 +74,7 @@ const Navbar = () => {
                   offset={-70}
                   activeClass="text-[#A855F7]"
                   spy={true}
-                  onClick={() => setIsOpen(false)} // Close menu on click
+                  onClick={() => setIsOpen(false)}
                   className="cursor-pointer hover:text-[#A855F7] transition"
                 >
                   {item}

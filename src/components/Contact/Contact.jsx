@@ -43,7 +43,6 @@ const Contact = () => {
       id="contact"
       className="min-h-screen bg-[#111111] text-white flex flex-col md:flex-row"
     >
-      {/* Left side - image + text */}
       <div
         className="w-full md:w-[45%] h-64 md:h-auto bg-cover bg-center relative flex flex-col justify-end p-8 text-white"
         style={{
@@ -60,9 +59,7 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Right side */}
       <div className="w-full md:w-[55%] flex flex-col p-8 md:p-12">
-        {/* Text on background, above the card */}
         {!isSubmitted && (
           <motion.div
             className="mb-10 text-center"
@@ -81,7 +78,6 @@ const Contact = () => {
           </motion.div>
         )}
 
-        {/* Form Card */}
         <div className="max-w-xl w-full bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-[#2a2a2a] transition-all duration-300 mx-auto">
           {isSubmitted ? (
             <motion.div
@@ -99,7 +95,6 @@ const Contact = () => {
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name Field */}
               <div>
                 <label
                   htmlFor="name"
@@ -121,7 +116,6 @@ const Contact = () => {
                 )}
               </div>
 
-              {/* Email Field */}
               <div>
                 <label
                   htmlFor="email"
@@ -143,7 +137,6 @@ const Contact = () => {
                 )}
               </div>
 
-              {/* Message Field */}
               <div>
                 <label
                   htmlFor="message"
@@ -165,7 +158,6 @@ const Contact = () => {
                 )}
               </div>
 
-              {/* Submit Button */}
               <div className="text-center">
                 <button
                   type="submit"

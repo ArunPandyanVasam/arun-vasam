@@ -27,12 +27,10 @@ const TimelineItem = ({
     transition={{ duration: 0.4 }}
     viewport={{ once: true }}
   >
-    {/* Icon */}
     <div className="w-10 h-10 md:w-12 md:h-12 min-w-[40px] flex items-center justify-center bg-purple-600 text-white rounded-full shadow-md text-sm md:text-base">
       {icon}
     </div>
 
-    {/* Content */}
     <div className="flex-1">
       <h4 className="text-base md:text-lg font-semibold text-[#A855F7]">
         {title}
@@ -100,9 +98,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* Box Layout */}
         <div className="bg-[#1c1c1c]/70 backdrop-blur-md border border-[#2a2a2a] rounded-2xl shadow-lg p-6 sm:p-8">
-          {/* Tabs inside box */}
           <div className="flex gap-3 overflow-x-auto no-scrollbar mb-6 sm:mb-8">
             {tabs.map((tab) => (
               <button
@@ -121,7 +117,6 @@ const Experience = () => {
             ))}
           </div>
 
-          {/* Tab Content */}
           <div className="divide-y divide-gray-700">{renderContent()}</div>
         </div>
       </div>

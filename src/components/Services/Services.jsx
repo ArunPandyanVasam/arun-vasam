@@ -29,7 +29,6 @@ const services = [
   },
 ];
 
-// Animation variant for cards
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i) => ({
@@ -50,7 +49,6 @@ const Services = () => {
       className="py-20 px-6 md:px-12 bg-[#111111] text-white"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
         <motion.div
           className="mb-16 text-center"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -66,7 +64,6 @@ const Services = () => {
           </p>
         </motion.div>
 
-        {/* Service Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => (
             <motion.div

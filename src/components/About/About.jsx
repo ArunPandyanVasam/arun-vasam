@@ -58,7 +58,6 @@ const About = () => {
     <section id="about" className="py-20 bg-black text-white">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10 md:gap-16">
-          {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -73,7 +72,6 @@ const About = () => {
               Get to Know <span className="text-purple-500">Arun Vasam</span>
             </h2>
 
-            {/* Tabs */}
             <div className="flex justify-center md:justify-start gap-4 flex-wrap mb-6">
               {tabs.map((tab) => (
                 <button
@@ -90,7 +88,6 @@ const About = () => {
               ))}
             </div>
 
-            {/* Tab Panel */}
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -105,7 +102,6 @@ const About = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* Social Icons */}
             <div className="mt-10 flex justify-center md:justify-start gap-6 text-gray-400">
               {socialLinks.map(({ label, href, icon }) => (
                 <a
