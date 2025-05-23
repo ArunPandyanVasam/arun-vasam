@@ -80,7 +80,7 @@ const Contact = () => {
           </motion.div>
         )}
 
-        <div className="max-w-xl w-full bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl shadow-xl border border-[#2a2a2a] transition-all duration-300 mx-auto">
+        <div className="max-w-xl w-full bg-[#1a1a1a]/80 backdrop-blur-md p-8 rounded-xl border border-[#2a2a2a] transition-all duration-300 mx-auto">
           {isSubmitted ? (
             <motion.div
               className="text-center"

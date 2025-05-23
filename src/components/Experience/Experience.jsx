@@ -80,7 +80,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-16 px-4 sm:px-6 md:px-12 bg-black text-white"
+      className="py-16 px-4 sm:px-6 md:px-12 bg-black  text-white"
     >
       <div className="max-w-4xl sm:max-w-5xl mx-auto">
         <motion.div
@@ -98,7 +98,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        <div className="bg-[#1c1c1c]/70 backdrop-blur-md border border-[#2a2a2a] rounded-2xl shadow-lg p-6 sm:p-8">
+        <div className="bg-[#1c1c1c]/70 backdrop-blur-md border border-[#2a2a2a] rounded-2xl p-6 sm:p-8">
           <div className="flex gap-3 overflow-x-auto no-scrollbar mb-6 sm:mb-8">
             {tabs.map((tab) => (
               <button
