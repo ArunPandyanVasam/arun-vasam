@@ -1,25 +1,35 @@
 [
   {
     "title": "WordPress Development Intern",
-    "company": "My Worthy Home, Remote",
-    "duration": "Jan, 2025 - Apr, 2025",
+    "company": "MY Worthy Home · Internship",
+    "duration": "Jan 2025 - Apr 2025",
+    "location": "New York, United States · Remote",
     "image": "/assets/experience/myworthyhome.png",
     "description": [
-      "Developed and customized WordPress themes and plugins using PHP, JavaScript, and CSS to enhance website functionality.",
-      "Integrated REST APIs to improve website performance and user experience.",
-      "Implemented WordPress security best practices to ensure data protection and site stability."
+      "Assisted in designing, developing, and maintaining responsive WordPress websites using custom themes and popular plugins.",
+      "Managed and updated website content through the WordPress CMS, ensuring accuracy and visual consistency.",
+      "Supported the customization of themes and minor plugin modifications using HTML, CSS, and basic PHP.",
+      "Troubleshot layout issues, fixed bugs, and performed basic cross-browser and mobile responsiveness testing.",
+      "Collaborated with designers and developers to implement new features and improve user experience.",
+      "Assisted in optimizing website performance, SEO settings, and security configurations.",
+      "Documented development processes and maintained task reports to ensure transparency and smooth team communication.",
+      "Gained hands-on experience with WordPress best practices, version control (Git), and basic web development workflows."
     ]
   },
   {
-    "title": "Jr. Developer",
-    "company": "Infotrack Systems, India",
-    "duration": "Oct, 2021 - Nov, 2022",
-    "image": "/assets/experience/myworthyhome.png",
+    "title": "Junior Developer",
+    "company": "Infotrack Systems · Permanent Full-time",
+    "duration": "Oct 2021 - Nov 2022",
+    "location": "India · On-site",
+    "image": "/assets/experience/infotrack.png",
     "description": [
-      "Developed HR & Payroll software features in C/C++, improving processing efficiency by 10%.",
-      "Optimized payroll processing using real-time software principles.",
-      "Managed software deliveries using Git and agile methodologies.",
-      "Led performance and scalability discussions for software modules."
+      "Developed and implemented HR and Payroll software functionalities in C/C++ with multi-threaded processing and efficient data handling.",
+      "Conducted continuous analysis and requirement handling, improving software quality and efficiency, which resulted in a 10% increase in overall productivity.",
+      "Participated in design discussions for software modules, focusing on performance optimization and scalability.",
+      "Applied real-time software development principles to enhance payroll processing and reporting functions.",
+      "Managed software deliveries and version control using Git, following industry best practices.",
+      "Created and maintained comprehensive documentation for system analysis, software design, and test plans.",
+      "Collaborated effectively in agile teams, working cross-functionally to deliver high-quality, scalable software solutions."
     ]
   }
 ]
