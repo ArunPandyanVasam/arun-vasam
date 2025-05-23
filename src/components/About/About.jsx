@@ -13,9 +13,9 @@ const About = () => {
             Over time, I’ve developed hands-on experience in object-oriented programming, data structures and algorithms, databases, computer networks, and modern web development. I thrive in environments that challenge me to grow and encourage creative problem-solving.
             Currently, I'm focused on sharpening my skills, exploring new technologies, and contributing to meaningful projects. I’m excited to join a forward-thinking team where I can make an impact, collaborate with like-minded professionals, and continue evolving as a developer.`,
 
-    Skills: `• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control`,
+    Skills: `• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control\n• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control\n• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control`,
 
-    Tools: `• VS Code, GitHub, Postman, Figma\n• scikit-learn, pandas, matplotlib, Excel\n• Netlify, Vercel, Render, Railway`,
+    Tools: `• VS Code, GitHub, Postman, Figma\n• scikit-learn, pandas, matplotlib, Excel\n• Netlify, Vercel, Render, Railway\n• VS Code, GitHub, Postman, Figma\n• scikit-learn, pandas, matplotlib, Excel\n• Netlify, Vercel, Render, Railway\n• VS Code, GitHub, Postman, Figma\n• scikit-learn, pandas, matplotlib, Excel\n• Netlify, Vercel, Render, Railway`,
   };
 
   const renderContent = () => {
