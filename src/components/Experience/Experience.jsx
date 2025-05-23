@@ -18,10 +18,10 @@ const TimelineItem = ({
   subtitle,
   duration,
   description,
-  image,
+  // image,
 }) => (
   <motion.div
-    className="flex flex-col md:flex-row items-start gap-4 md:gap-6 mb-8"
+    className="flex flex-row items-start gap-4 md:gap-6 mb-8"
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4 }}
@@ -72,7 +72,7 @@ const Experience = () => {
         subtitle={item.company || item.institution}
         duration={item.duration}
         description={item.description}
-        image={item.image}
+        // image={item.image}
       />
     ));
   };

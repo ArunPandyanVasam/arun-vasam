@@ -11,7 +11,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/hero/hero.jpg')",
+          backgroundImage: "url('/assets/hero/hero_background.jpg')",
           filter: "brightness(35%)",
         }}
       ></div>
@@ -24,7 +24,7 @@ const Hero = () => {
       >
         <div className="flex-shrink-0">
           <img
-            src="/assets/about/aboutImage.png"
+            src="/assets/hero/hero_profile.png"
             alt="Arun Vasam"
             className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover border-4 border-[#00B8D9] shadow-2xl"
           />

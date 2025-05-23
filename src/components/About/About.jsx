@@ -57,12 +57,12 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-black text-white">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="flex flex-col-reverse md:flex-row items-center md:items-start gap-10 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-32">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex-1 w-full max-w-2xl mx-auto md:mx-0"
+            className="flex-1 max-w-2xl"
           >
             <p className="text-purple-400 text-sm uppercase tracking-widest mb-2 text-center md:text-left">
               Developer. Problem Solver. Innovator.
@@ -101,8 +101,23 @@ const About = () => {
                 {renderContent()}
               </motion.div>
             </AnimatePresence>
+          </motion.div>
 
-            <div className="mt-10 flex justify-center md:justify-start gap-6 text-gray-400">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="flex-1 max-w-md mt-6 md:mt-0 flex flex-col items-center"
+          >
+            <img
+              src="/assets/about/about.jpg"
+              alt="About Arun Vasam"
+              className="rounded-xl shadow-lg w-full object-cover"
+              style={{ maxHeight: "400px" }}
+              loading="lazy"
+            />
+
+            <div className="mt-8 flex justify-center gap-6 text-gray-400 w-full">
               {socialLinks.map(({ label, href, icon }) => (
                 <a
                   key={label}
