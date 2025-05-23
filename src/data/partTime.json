@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Repack Associate",
+        "company": "Best Buy Distribution Centre",
+        "duration": "May 2023 – Dec 2024",
+        "location": "Brampton, Ontario, Canada",
+        "description": [
+            "Received, stocked, and organized merchandise using RF scanners for inventory tracking.",
+            "Operated pump trucks and secured shipments for safe transport.",
+            "Trained new employees on warehouse procedures and inventory systems.",
+            "Resolved device sync issues and flagged barcode mismatches to maintain order accuracy.",
+            "Utilized digital tools and RF scanner technology to improve inventory accuracy."
+        ]
+    },
+    {
+        "title": "Retail Sales Associate",
+        "company": "Crate and Barrel",
+        "duration": "Oct 2023 – Mar 2024",
+        "location": "North York, Ontario, Canada",
+        "description": [
+            "Provided product information and personalized recommendations to customers.",
+            "Supported order fulfillment including curbside, in-store, and online orders.",
+            "Resolved digital issues for customers and escalated technical problems.",
+            "Maintained organized displays and stocked inventory.",
+            "Assisted customers with mobile POS and handheld scanner devices during transactions."
+        ]
+    },
+    {
+        "title": "Sales Associate",
+        "company": "Max Fashion",
+        "duration": "Jul 2020 – Sep 2022",
+        "location": "Hyderabad, Telangana, India",
+        "description": [
+            "Delivered exceptional customer service and promoted loyalty programs.",
+            "Assisted with inventory management and restocking.",
+            "Supported customers with mobile app usage and basic troubleshooting.",
+            "Processed transactions and maintained store organization.",
+            "Helped customers navigate mobile loyalty apps and troubleshoot basic digital issues."
+        ]
+    }
+]
