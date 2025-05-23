@@ -34,41 +34,5 @@
     "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
     "demo": "https://gamemultiplication.netlify.app/",
     "image": "/assets/projects/avatar.jpg"
-  },
-  {
-    "title": "Multiplication Game",
-    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
-    "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
-    "demo": "https://gamemultiplication.netlify.app/",
-    "image": "/assets/projects/avatar.jpg"
-  },
-  {
-    "title": "Multiplication Game",
-    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
-    "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
-    "demo": "https://gamemultiplication.netlify.app/",
-    "image": "/assets/projects/avatar.jpg"
-  },
-  {
-    "title": "Multiplication Game",
-    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
-    "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ],
-    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
-    "demo": "https://gamemultiplication.netlify.app/",
-    "image": "/assets/projects/avatar.jpg"
   }
 ]
