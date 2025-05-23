@@ -11,12 +11,10 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 tracking-tight">
-            Projects that Inspire, Innovate, and Transform
+            What if I just built it myself?
           </h2>
           <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
-            Every line of code tells a story, every project is a step toward
-            making a difference. Dive into the world of innovation, creativity,
-            and positive change.
+            So I did. Here’s what came out of that mindset.
           </p>
         </div>
 

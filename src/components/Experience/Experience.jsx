@@ -34,7 +34,9 @@ const TimelineItem = ({
 
     {/* Content */}
     <div className="flex-1">
-      <h4 className="text-base md:text-lg font-semibold text-[#A855F7]">{title}</h4>
+      <h4 className="text-base md:text-lg font-semibold text-[#A855F7]">
+        {title}
+      </h4>
       <p className="text-xs md:text-sm text-gray-300">{subtitle}</p>
       <p className="text-[10px] md:text-xs text-gray-500 mt-1">{duration}</p>
       <ul className="mt-2 md:mt-3 text-xs md:text-sm text-gray-300 list-disc pl-5 space-y-1 leading-relaxed">
@@ -91,12 +93,10 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-            MY EXPERIENCE
+            Chapters of My Journey
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mt-3 max-w-xl mx-auto">
-            A comprehensive overview of my career journey and educational
-            background, highlighting key roles, skills developed, and
-            significant accomplishments across diverse industries.
+            A simple story of hard work and growth.
           </p>
         </motion.div>
 
