@@ -46,7 +46,7 @@ const Contact = () => {
       <div
         className="w-full md:w-[45%] h-64 md:h-auto bg-cover bg-center flex items-center justify-center p-8 text-white"
         style={{
-          backgroundImage: "url('/assets/hero/hero.jpg')",
+          backgroundImage: "url('/assets/contact/hero.jpg')",
         }}
       >
         <div className="max-w-sm w-full">
