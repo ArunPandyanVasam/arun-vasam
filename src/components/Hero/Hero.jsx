@@ -33,7 +33,7 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-[#1F2937]">
             Hello, I'm <span className="text-[#4F46E5]">Arun Vasam</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl font-medium text-[#475569] mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl font-medium text-[#29303b] mb-8">
             A Software Developer dedicated to building real-world solutions
             through purposeful and efficient code.
           </p>

@@ -63,7 +63,7 @@ const Contact = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#6366F1] tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
               Get in Touch
             </h2>
             <p className="mt-4 text-[#475569] text-base sm:text-lg max-w-xl mx-auto">

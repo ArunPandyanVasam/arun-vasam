@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8">
           <div className="text-center sm:text-left mb-4 sm:mb-0">
             <h3 className="text-xl font-bold text-[#6366F1]">Get in Touch</h3>
-            <p className="text-[#94A3B8] mt-2">
+            <p className="text-[#1F2937] mt-2">
               Feel free to reach out anytime!
             </p>
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-[#6366F1] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
+              className="text-[#1F2937] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
             >
               <FaGithub size={24} />
             </a>
@@ -31,7 +31,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-[#6366F1] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
+              className="text-[#1F2937] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
             >
               <FaLinkedin size={24} />
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="text-[#6366F1] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
+              className="text-[#1F2937] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
             >
               <FaTwitter size={24} />
             </a>
@@ -48,7 +48,7 @@ const Footer = () => {
               href="mailto:arunpandyanv@gmail.com?subject=Hello%20Arunvasam&body=I%20visited%20your%20portfolio%20and%20wanted%20to%20connect!"
               aria-label="Email"
               title="Send me an email"
-              className="text-[#6366F1] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
+              className="text-[#1F2937] hover:text-[#4338CA] hover:scale-110 transform transition duration-300"
             >
               <MdEmail size={24} />
             </a>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-[#E2E8F0] pt-6 text-center">
-          <p className="text-[#94A3B8] text-sm">
+          <p className="text-[#1F2937] text-sm">
             &copy; {currentYear} Arunvasam. Let's build something great together!
           </p>
         </div>

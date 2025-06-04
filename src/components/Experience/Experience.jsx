@@ -30,7 +30,7 @@ const TimelineItem = ({ icon, title, subtitle, duration, description }) => (
       </h4>
       <p className="text-xs md:text-sm text-[#475569]">{subtitle}</p>
       <p className="text-[10px] md:text-xs text-[#64748B] mt-1">{duration}</p>
-      <ul className="mt-2 md:mt-3 text-xs md:text-sm text-[#1F2937] list-disc pl-5 space-y-1 leading-relaxed">
+      <ul className="mt-2 md:mt-3 text-xs md:text-sm text-[#475569] list-disc pl-5 space-y-1 leading-relaxed">
         {description.map((desc, i) => (
           <li key={i}>{desc}</li>
         ))}
@@ -85,7 +85,7 @@ const Experience = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2937]">
             My Journey in Work & Education
           </h2>
-          <p className="text-[#64748B] text-sm sm:text-base mt-3 max-w-xl mx-auto">
+          <p className="text-[#475569] text-sm sm:text-base mt-3 max-w-xl mx-auto">
             A collection of my professional experiences and academic milestones.
           </p>
         </motion.div>
@@ -110,7 +110,7 @@ const Experience = () => {
             ))}
           </div>
 
-          <div className="divide-y divide-[#E2E8F0]">{renderContent()}</div>
+          <div className="divide-y divide-[#e3f0e2]">{renderContent()}</div>
         </div>
       </div>
     </section>

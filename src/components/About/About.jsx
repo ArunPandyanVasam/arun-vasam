@@ -9,9 +9,9 @@ const About = () => {
   const tabs = ["Story", "Skills", "Tools"];
 
   const tabContent = {
-    Story: `I'm an aspiring software developer with a strong foundation in programming fundamentals and a deep passion for building solutions that make a real-world impact. My journey into tech began with an intense curiosity about how things work under the hood—what started as simple scripts soon evolved into full-stack applications, personal projects, and a growing appetite for continuous learning.
-            Over time, I’ve developed hands-on experience in object-oriented programming, data structures and algorithms, databases, computer networks, and modern web development. I thrive in environments that challenge me to grow and encourage creative problem-solving.
-            Currently, I'm focused on sharpening my skills, exploring new technologies, and contributing to meaningful projects. I’m excited to join a forward-thinking team where I can make an impact, collaborate with like-minded professionals, and continue evolving as a developer.`,
+    Story: `I'm an aspiring software developer with a solid foundation in programming fundamentals and a passion for building meaningful, real-world solutions. My journey began with a curiosity for how technology works under the hood—what started as small scripting experiments grew into full-stack applications and a drive for continuous learning.
+            I’ve gained hands-on experience in object-oriented programming, data structures and algorithms, web development, databases, and networks. I enjoy working on projects that challenge me to think critically and solve problems creatively.
+            Currently, I’m expanding my skill set, exploring new technologies, and contributing to practical projects. I'm excited to join a forward-thinking team where I can grow, collaborate, and make an impact as a developer.`,
 
     Skills: `• JavaScript (ES6+), Python, Flask, React, HTML/CSS\n• Machine Learning, Data Analysis, REST API Development\n• UI/UX Fundamentals, Responsive Design, Git Version Control`,
 
@@ -117,7 +117,7 @@ const About = () => {
               loading="lazy"
             />
 
-            <div className="mt-8 flex justify-center gap-6 text-[#475569] w-full">
+            <div className="mt-8 flex justify-center gap-6 text-[#1F2937] w-full">
               {socialLinks.map(({ label, href, icon }) => (
                 <a
                   key={label}
@@ -125,7 +125,7 @@ const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="hover:text-[#4F46E5] transition-colors focus:outline-none focus:ring-2 focus:ring-[#4F46E5] rounded"
+                  className="hover:text-[#4338CA] transition-colors focus:outline-none focus:ring-2 focus:ring-[#4F46E5] rounded"
                 >
                   {icon}
                 </a>
