@@ -12,14 +12,14 @@ const Contact = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.name) newErrors.name = "Name is required";
-    if (!formData.email) newErrors.email = "Email is required";
-    if (!formData.message) newErrors.message = "Message is required";
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
     return newErrors;
   };
 
@@ -30,7 +30,8 @@ const Contact = () => {
       setErrors(formErrors);
       return;
     }
-    console.log(formData); // TODO: Replace with real submission
+    // TODO: Replace with real submission logic
+    console.log(formData);
     setIsSubmitted(true);
     setErrors({});
   };
@@ -38,15 +39,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#0F172A] text-[#F1F5F9] flex flex-col md:flex-row"
+      className="min-h-screen bg-[#F9FAFB] text-[#1F2937] flex flex-col md:flex-row"
     >
       <div className="w-full md:w-[45%] h-auto flex items-center justify-center p-8">
-        <div className="max-w-sm w-full text-[#1E40AF]">
+        <div className="max-w-sm w-full text-[#6366F1]">
           <h3 className="text-2xl md:text-3xl font-bold mb-2">
             Let’s connect and build something meaningful.
           </h3>
-          <hr className="border-[#2563EB] border-2 mb-3 w-12" />
-          <p className="text-sm md:text-base">
+          <hr className="border-[#6366F1] border-2 mb-3 w-12" />
+          <p className="text-sm md:text-base text-[#475569]">
             Whether it’s a job opportunity, collaboration, or just a chat — I’m
             all ears.
           </p>
@@ -62,16 +63,19 @@ const Contact = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#C7D2FE] tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#6366F1] tracking-tight">
               Get in Touch
             </h2>
-            <p className="mt-4 text-[#94A3B8] text-base sm:text-lg max-w-xl mx-auto">
+            <p className="mt-4 text-[#475569] text-base sm:text-lg max-w-xl mx-auto">
               Feel free to reach out about work, feedback, or anything else.
             </p>
           </motion.div>
         )}
 
-        <div className="max-w-xl w-full bg-[#1E293B] shadow-md rounded-xl border border-[#334155] p-8 mx-auto transition-all duration-300">
+        <div
+          className="max-w-xl w-full bg-white shadow-md rounded-xl border border-[#E2E8F0] p-8 mx-auto transition-all duration-300"
+          aria-live="polite"
+        >
           {isSubmitted ? (
             <motion.div
               className="text-center"
@@ -82,16 +86,16 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-[#6366F1]">
                 Thank you!
               </h3>
-              <p className="text-[#94A3B8] mt-2">
+              <p className="text-[#475569] mt-2">
                 Your message has been sent — I’ll be in touch shortly.
               </p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} noValidate className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-[#C7D2FE]"
+                  className="block text-sm font-medium text-[#6366F1]"
                 >
                   Name
                 </label>
@@ -99,20 +103,21 @@ const Contact = () => {
                   type="text"
                   name="name"
                   id="name"
+                  autoComplete="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full mt-2 p-3 border border-[#334155] rounded-lg bg-[#0F172A] text-[#C7D2FE] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
+                  className="w-full mt-2 p-3 border border-[#E2E8F0] rounded-lg bg-white text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
                   placeholder="Your Name"
                 />
                 {errors.name && (
-                  <p className="text-red-500 text-sm mt-2">{errors.name}</p>
+                  <p className="text-red-600 text-sm mt-2">{errors.name}</p>
                 )}
               </div>
 
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-[#C7D2FE]"
+                  className="block text-sm font-medium text-[#6366F1]"
                 >
                   Email
                 </label>
@@ -120,20 +125,21 @@ const Contact = () => {
                   type="email"
                   name="email"
                   id="email"
+                  autoComplete="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full mt-2 p-3 border border-[#334155] rounded-lg bg-[#0F172A] text-[#C7D2FE] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
+                  className="w-full mt-2 p-3 border border-[#E2E8F0] rounded-lg bg-white text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
                   placeholder="Your Email"
                 />
                 {errors.email && (
-                  <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+                  <p className="text-red-600 text-sm mt-2">{errors.email}</p>
                 )}
               </div>
 
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-[#C7D2FE]"
+                  className="block text-sm font-medium text-[#6366F1]"
                 >
                   Message
                 </label>
@@ -143,11 +149,11 @@ const Contact = () => {
                   rows="6"
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full mt-2 p-3 border border-[#334155] rounded-lg bg-[#0F172A] text-[#C7D2FE] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
+                  className="w-full mt-2 p-3 border border-[#E2E8F0] rounded-lg bg-white text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
                   placeholder="Your Message"
                 />
                 {errors.message && (
-                  <p className="text-red-500 text-sm mt-2">{errors.message}</p>
+                  <p className="text-red-600 text-sm mt-2">{errors.message}</p>
                 )}
               </div>
 

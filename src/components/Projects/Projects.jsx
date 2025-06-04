@@ -6,14 +6,14 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 px-6 md:px-12 bg-[#0F172A] text-[#F1F5F9]"
+      className="w-full py-20 px-6 md:px-12 bg-[#F8FAFC] text-[#1F2937]"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#F1F5F9] tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
             Projects I've Built
           </h2>
-          <p className="mt-4 text-[#94A3B8] text-base sm:text-lg max-w-xl mx-auto">
+          <p className="mt-4 text-[#475569] text-base sm:text-lg max-w-xl mx-auto">
             From ideas to deployments — here are some solutions I've engineered.
           </p>
         </div>
@@ -22,35 +22,36 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-2xl border border-[#334155] bg-[#1E293B] shadow-md hover:shadow-xl transition duration-300"
+              className="overflow-hidden rounded-2xl border border-[#E2E8F0] bg-white shadow-sm hover:shadow-lg transition duration-300"
             >
               <a
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Live demo of ${project.title}`}
+                tabIndex={0}
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`Screenshot of ${project.title}`}
                     className="w-full h-[220px] object-cover transform hover:scale-105 transition duration-500"
                   />
                 </div>
               </a>
 
               <div className="p-6 flex flex-col gap-4">
-                <h3 className="text-xl font-bold text-[#6366F1]">{project.title}</h3>
+                <h3 className="text-xl font-bold text-[#4F46E5]">{project.title}</h3>
 
-                <div className="h-[2px] w-12 bg-[#6366F1] rounded"></div>
+                <div className="h-[2px] w-12 bg-[#4F46E5] rounded"></div>
 
-                <p className="text-sm text-[#94A3B8] leading-relaxed">{project.description}</p>
+                <p className="text-sm text-[#475569] leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="bg-[#1E40AF] text-[#C7D2FE] px-3 py-1 rounded-full text-xs font-medium tracking-wide"
+                      className="bg-[#E0E7FF] text-[#3730A3] px-3 py-1 rounded-full text-xs font-medium tracking-wide"
                     >
                       {tech}
                     </span>
@@ -64,7 +65,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     title="GitHub Repo"
                     aria-label={`GitHub repository for ${project.title}`}
-                    className="text-[#6366F1] text-xl hover:text-[#4338CA] transition"
+                    className="text-[#4F46E5] text-xl hover:text-[#4338CA] transition"
                   >
                     <FaGithub />
                   </a>
@@ -74,7 +75,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     title="Live Demo"
                     aria-label={`Live demo for ${project.title}`}
-                    className="text-[#6366F1] text-xl hover:text-[#4338CA] transition"
+                    className="text-[#4F46E5] text-xl hover:text-[#4338CA] transition"
                   >
                     <FaExternalLinkAlt />
                   </a>
