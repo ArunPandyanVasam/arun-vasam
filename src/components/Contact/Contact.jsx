@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#F9FAFB] text-[#1F2937] flex flex-col md:flex-row"
+      className="min-h-screen bg-[#f6eef0] text-[#1F2937] flex flex-col md:flex-row"
     >
       <div className="w-full md:w-[45%] h-auto flex items-center justify-center p-8">
         <div className="max-w-sm w-full text-[#6366F1]">
@@ -47,7 +47,7 @@ const Contact = () => {
             Let’s connect and build something meaningful.
           </h3>
           <hr className="border-[#6366F1] border-2 mb-3 w-12" />
-          <p className="text-sm md:text-base text-[#475569]">
+          <p className="text-sm md:text-base text-[#1F2937]">
             Whether it’s a job opportunity, collaboration, or just a chat — I’m
             all ears.
           </p>
@@ -66,14 +66,14 @@ const Contact = () => {
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
               Get in Touch
             </h2>
-            <p className="mt-4 text-[#475569] text-base sm:text-lg max-w-xl mx-auto">
+            <p className="mt-4 text-[#1F2937] text-base sm:text-lg max-w-xl mx-auto">
               Feel free to reach out about work, feedback, or anything else.
             </p>
           </motion.div>
         )}
 
         <div
-          className="max-w-xl w-full bg-white shadow-md rounded-xl border border-[#E2E8F0] p-8 mx-auto transition-all duration-300"
+          className="max-w-xl w-full bg-white shadow-md rounded-xl border border-[#cdd3db] p-8 mx-auto transition-all duration-300"
           aria-live="polite"
         >
           {isSubmitted ? (

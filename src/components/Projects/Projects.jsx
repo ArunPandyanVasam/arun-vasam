@@ -6,14 +6,14 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 px-6 md:px-12 bg-[#F8FAFC] text-[#1F2937]"
+      className="w-full py-20 px-6 md:px-12 bg-[#f6eef0] text-[#1F2937]"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
             Projects I've Built
           </h2>
-          <p className="mt-4 text-[#475569] text-base sm:text-lg max-w-xl mx-auto">
+          <p className="mt-4 text-[#1F2937] text-base sm:text-lg max-w-xl mx-auto">
             From ideas to deployments — here are some solutions I've engineered.
           </p>
         </div>
@@ -45,7 +45,7 @@ const Projects = () => {
 
                 <div className="h-[2px] w-12 bg-[#4F46E5] rounded"></div>
 
-                <p className="text-sm text-[#475569] leading-relaxed">{project.description}</p>
+                <p className="text-sm text-[#1F2937] leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.tech.map((tech, i) => (

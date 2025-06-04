@@ -28,9 +28,9 @@ const TimelineItem = ({ icon, title, subtitle, duration, description }) => (
       <h4 className="text-base md:text-lg font-semibold text-[#4F46E5]">
         {title}
       </h4>
-      <p className="text-xs md:text-sm text-[#475569]">{subtitle}</p>
-      <p className="text-[10px] md:text-xs text-[#64748B] mt-1">{duration}</p>
-      <ul className="mt-2 md:mt-3 text-xs md:text-sm text-[#475569] list-disc pl-5 space-y-1 leading-relaxed">
+      <p className="text-xs md:text-sm text-[#1F2937]">{subtitle}</p>
+      <p className="text-[10px] md:text-xs text-[#1F2937] mt-1">{duration}</p>
+      <ul className="mt-2 md:mt-3 text-xs md:text-sm text-[#1F2937] list-disc pl-5 space-y-1 leading-relaxed">
         {description.map((desc, i) => (
           <li key={i}>{desc}</li>
         ))}
@@ -72,7 +72,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-16 px-4 sm:px-6 md:px-12 bg-[#F8FAFC] text-[#1F2937]"
+      className="py-16 px-4 sm:px-6 md:px-12 bg-[#f6eef0] text-[#1F2937]"
     >
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -85,12 +85,12 @@ const Experience = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2937]">
             My Journey in Work & Education
           </h2>
-          <p className="text-[#475569] text-sm sm:text-base mt-3 max-w-xl mx-auto">
+          <p className="text-[#1F2937] text-sm sm:text-base mt-3 max-w-xl mx-auto">
             A collection of my professional experiences and academic milestones.
           </p>
         </motion.div>
 
-        <div className="bg-white border border-[#E2E8F0] shadow-sm rounded-2xl p-6 sm:p-8">
+        <div className="bg-[#f2f1f0] border border-[#cdd3db] shadow-sm rounded-2xl p-6 sm:p-8">
           <div className="flex gap-3 overflow-x-auto no-scrollbar mb-6 sm:mb-8">
             {tabs.map((tab) => (
               <button

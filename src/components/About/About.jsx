@@ -55,7 +55,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-[#F8FAFC] text-[#1F2937]">
+    <section id="about" className="py-20 bg-[#f6eef0] text-[#1F2937]">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-20">
           <motion.div
@@ -96,7 +96,7 @@ const About = () => {
                 exit="hidden"
                 variants={tabContentVariants}
                 transition={{ duration: 0.4 }}
-                className="text-left min-h-[140px] text-[#475569] leading-relaxed"
+                className="text-left min-h-[140px] text-[#1F2937] leading-relaxed"
               >
                 {renderContent()}
               </motion.div>
