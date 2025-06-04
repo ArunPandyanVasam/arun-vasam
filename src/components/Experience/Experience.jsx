@@ -97,7 +97,7 @@ const Experience = () => {
                 key={tab.name}
                 aria-label={`Show ${tab.name} experience`}
                 onClick={() => setActiveTab(tab.name)}
-                className={`flex flex-shrink-0 items-center gap-2 px-4 py-1.5 rounded-full font-medium transition-all duration-300 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#4F46E5] ${
+                className={`cursor-pointer flex flex-shrink-0 items-center gap-2 px-4 py-1.5 rounded-full font-medium transition-all duration-300 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#4F46E5] ${
                   activeTab === tab.name
                     ? "bg-[#4F46E5] text-white"
                     : "bg-[#E5E7EB] text-[#1F2937] hover:bg-[#D1D5DB]"
