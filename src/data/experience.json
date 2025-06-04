@@ -6,14 +6,11 @@
     "location": "New York, United States · Remote",
     "image": "/assets/experience/myworthyhome.png",
     "description": [
-      "Assisted in designing, developing, and maintaining responsive WordPress websites using custom themes and popular plugins.",
-      "Managed and updated website content through the WordPress CMS, ensuring accuracy and visual consistency.",
-      "Supported the customization of themes and minor plugin modifications using HTML, CSS, and basic PHP.",
-      "Troubleshot layout issues, fixed bugs, and performed basic cross-browser and mobile responsiveness testing.",
-      "Collaborated with designers and developers to implement new features and improve user experience.",
-      "Assisted in optimizing website performance, SEO settings, and security configurations.",
-      "Documented development processes and maintained task reports to ensure transparency and smooth team communication.",
-      "Gained hands-on experience with WordPress best practices, version control (Git), and basic web development workflows."
+      "Assisted in designing, developing, and maintaining responsive WordPress websites using custom themes and widely-used plugins",
+      "Managed and updated site content via the WordPress CMS, ensuring consistency in branding and layout",
+      "Customized themes and made minor plugin modifications using HTML, CSS, and basic PHP",
+      "Identified and resolved layout issues, bugs, and responsiveness problems across browsers and devices",
+      "Gained practical experience with WordPress best practices, version control (Git), and modern web development workflows"
     ]
   },
   {
@@ -23,13 +20,11 @@
     "location": "India · On-site",
     "image": "/assets/experience/infotrack.png",
     "description": [
-      "Developed and implemented HR and Payroll software functionalities in C/C++ with multi-threaded processing and efficient data handling.",
-      "Conducted continuous analysis and requirement handling, improving software quality and efficiency, which resulted in a 10% increase in overall productivity.",
-      "Participated in design discussions for software modules, focusing on performance optimization and scalability.",
-      "Applied real-time software development principles to enhance payroll processing and reporting functions.",
-      "Managed software deliveries and version control using Git, following industry best practices.",
-      "Created and maintained comprehensive documentation for system analysis, software design, and test plans.",
-      "Collaborated effectively in agile teams, working cross-functionally to deliver high-quality, scalable software solutions."
+      "Developed and implemented HR and payroll software features using C/C++, with a focus on multi-threaded processing and performance optimization",
+      "Conducted requirement analysis and iterative improvements, contributing to a 10% increase in system productivity",
+      "Applied real-time software development techniques to enhance payroll automation and reporting tools",
+      "Authored detailed technical documentation covering system analysis, design specifications, and test procedures",
+      "Collaborated within Agile teams to deliver scalable, high-quality software solutions across cross-functional departments"
     ]
   }
 ]
