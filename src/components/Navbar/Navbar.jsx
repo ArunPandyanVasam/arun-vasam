@@ -19,17 +19,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-black shadow-md">
+    <header className="sticky top-0 z-50 bg-[#0F172A] shadow-md">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="text-2xl font-bold tracking-wide text-white">
-          ARUN<span className="text-[#A855F7]">VASAM</span>
+        <div className="text-2xl font-bold tracking-wide text-[#E0F2FE]">
+          ARUN<span className="text-[#4F46E5]">VASAM</span>
         </div>
 
         <ul className="hidden md:flex items-center gap-10 font-medium">
           {navLinks.map((item) => (
             <li
               key={item}
-              className="relative text-white hover:text-[#A855F7] transition cursor-pointer group uppercase tracking-wider"
+              className="relative text-[#E0F2FE] hover:text-[#06B6D4] transition cursor-pointer group uppercase tracking-wider"
             >
               <Link
                 to={item.toLowerCase()}
@@ -37,34 +37,34 @@ const Navbar = () => {
                 // duration={500}
                 offset={-70}
                 className="cursor-pointer"
-                activeClass="text-[#A855F7]"
+                activeClass="text-[#06B6D4]"
                 spy={true}
               >
                 {item}
               </Link>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#A855F7] to-[#9333EA] transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] transition-all group-hover:w-full"></span>
             </li>
           ))}
         </ul>
 
         <div className="md:hidden">
           <button onClick={() => setIsOpen(true)} aria-label="Open Menu">
-            <Menu size={28} className="text-white" />
+            <Menu size={28} className="text-[#E0F2FE]" />
           </button>
         </div>
       </nav>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center z-50 transition-all">
+        <div className="fixed inset-0 bg-[#0F172A]/90 backdrop-blur-sm flex flex-col items-center justify-center z-50 transition-all">
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-6 right-6 text-white"
+            className="absolute top-6 right-6 text-[#E0F2FE]"
             aria-label="Close Menu"
           >
             <X size={28} />
           </button>
 
-          <ul className="flex flex-col items-center gap-8 text-2xl font-semibold text-white">
+          <ul className="flex flex-col items-center gap-8 text-2xl font-semibold text-[#E0F2FE]">
             {navLinks.map((item) => (
               <li key={item} className="uppercase tracking-wider">
                 <Link
@@ -72,10 +72,10 @@ const Navbar = () => {
                   // smooth={true}
                   // duration={500}
                   offset={-70}
-                  activeClass="text-[#A855F7]"
+                  activeClass="text-[#06B6D4]"
                   spy={true}
                   onClick={() => setIsOpen(false)}
-                  className="cursor-pointer hover:text-[#A855F7] transition"
+                  className="cursor-pointer hover:text-[#06B6D4] transition"
                 >
                   {item}
                 </Link>
