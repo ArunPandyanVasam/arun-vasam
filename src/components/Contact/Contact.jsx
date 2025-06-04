@@ -160,7 +160,7 @@ const Contact = () => {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="w-full py-3 px-6 bg-[#6366F1] text-white rounded-lg text-lg font-semibold hover:bg-[#4338CA] transition-all duration-300"
+                  className="cursor-pointer w-full py-3 px-6 bg-[#6366F1] text-white rounded-lg text-lg font-semibold hover:bg-[#4338CA] transition-all duration-300"
                 >
                   Send Message
                 </button>
