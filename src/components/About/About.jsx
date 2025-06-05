@@ -60,7 +60,7 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
   ];
 
   return (
-    <section id="about" className="py-16 px-4 sm:px-6 md:px-12 bg-[#F9FAFB] text-[#111827]">
+    <section id="about" className="py-16 px-4 sm:px-6 md:px-12 bg-[#f3f5f9] text-[#111827]">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Text Section */}
@@ -133,7 +133,7 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="p-2 text-indigo-500 hover:text-purple-600 rounded-full transition hover:bg-indigo-100"
+                  className="p-2 text-[#1F2937]-500 hover:text-purple-600 rounded-full transition hover:bg-indigo-100"
                 >
                   {icon}
                 </a>

@@ -39,7 +39,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#F9FAFB] text-[#1F2937] flex flex-col md:flex-row"
+      className="min-h-screen bg-[#f3f5f9] text-[#1F2937] flex flex-col md:flex-row"
     >
       {/* Left panel: Original positioned content */}
       <div className="w-full md:w-[45%] h-auto flex items-center justify-center p-8">
@@ -49,7 +49,8 @@ const Contact = () => {
           </h3>
           <hr className="border-[#6366F1] border-2 mb-3 w-12" />
           <p className="text-sm md:text-base text-[#1F2937]">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m all ears.
+            Whether it’s a job opportunity, collaboration, or just a chat — I’m
+            all ears.
           </p>
         </div>
       </div>
@@ -64,9 +65,10 @@ const Contact = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-[#1F2937] tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 tracking-tight">
               Get in Touch
             </h2>
+
             <p className="mt-4 text-[#1F2937] text-base sm:text-lg max-w-xl mx-auto">
               Feel free to reach out about work, feedback, or anything else.
             </p>
@@ -74,7 +76,7 @@ const Contact = () => {
         )}
 
         <div
-          className="max-w-xl w-full bg-white shadow-md rounded-xl border border-[#cdd3db] p-8 mx-auto transition-all duration-300"
+          className="max-w-xl w-full bg-[#F9FAFB] shadow-md rounded-xl border border-[#cdd3db] p-8 mx-auto transition-all duration-300"
           aria-live="polite"
         >
           {isSubmitted ? (

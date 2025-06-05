@@ -74,7 +74,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-16 px-4 sm:px-6 md:px-12 bg-[#F9FAFB] text-[#1F2937]"
+      className="py-16 px-4 sm:px-6 md:px-12 bg-[#f3f5f9] text-[#1F2937]"
     >
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -84,15 +84,16 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1F2937]">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 tracking-tight">
             My Journey in Work & Education
           </h2>
+
           <p className="text-[#1F2937] text-sm sm:text-base mt-3 max-w-xl mx-auto">
             A collection of my professional experiences and academic milestones.
           </p>
         </motion.div>
 
-        <div className="bg-[#f2f1f0] border border-[#cdd3db] shadow-sm rounded-2xl p-6 sm:p-8">
+        <div className="bg-[#F9FAFB] border border-[#cdd3db] shadow-sm rounded-2xl p-6 sm:p-8">
           <div className={`${styles.tabContainer} mb-6 sm:mb-8`}>
             {tabs.map((tab) => (
               <button
@@ -112,7 +113,7 @@ const Experience = () => {
             ))}
           </div>
 
-          <div className="divide-y divide-[#e3f0e2]">{renderContent()}</div>
+          <div className="divide-y divide-[#cecece]">{renderContent()}</div>
         </div>
       </div>
     </section>

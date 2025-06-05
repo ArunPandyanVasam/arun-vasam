@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 px-6 md:px-12 bg-[#F9FAFB] text-[#111827]"
+      className="w-full py-20 px-6 md:px-12 bg-[#f3f5f9] text-[#111827]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -17,8 +17,7 @@ const Projects = () => {
             Projects I've Built
           </h2>
           <p className="mt-4 text-base sm:text-lg max-w-xl mx-auto text-[#4B5563]">
-            From ideas to deployment — here are some elegant solutions I've
-            engineered.
+            From ideas to deployment — here are some elegant solutions.
           </p>
         </div>
 
@@ -39,7 +38,7 @@ const Projects = () => {
 
             return (
               <CardWrapper key={index}>
-                <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-[1.02] duration-300">
+                <div className="overflow-hidden rounded-2xl border border-gray-200 bg-[#F9FAFB] shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-[1.02] duration-300">
                   <a
                     href={project.demo}
                     target="_blank"
