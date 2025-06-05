@@ -50,26 +50,30 @@ const Experience = () => {
     Education: educationData,
   };
 
-  const renderContent = () => {
-    return contentMap[activeTab].map((item, index) => (
+  const getIconByTab = (tabName) => {
+    switch (tabName) {
+      case "Professional":
+        return <FaBriefcase />;
+      case "Part-Time":
+        return <FaClock />;
+      case "Education":
+        return <FaGraduationCap />;
+      default:
+        return null;
+    }
+  };
+
+  const renderContent = () =>
+    contentMap[activeTab].map((item, index) => (
       <TimelineItem
         key={index}
-        icon={
-          activeTab === "Professional" ? (
-            <FaBriefcase />
-          ) : activeTab === "Part-Time" ? (
-            <FaClock />
-          ) : (
-            <FaGraduationCap />
-          )
-        }
+        icon={getIconByTab(activeTab)}
         title={item.title || item.degree}
         subtitle={item.company || item.institution}
         duration={item.duration}
         description={item.description}
       />
     ));
-  };
 
   return (
     <section
@@ -87,28 +91,29 @@ const Experience = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 tracking-tight">
             My Journey in Work & Education
           </h2>
-
           <p className="text-[#1F2937] text-sm sm:text-base mt-3 max-w-xl mx-auto">
             A collection of my professional experiences and academic milestones.
           </p>
         </motion.div>
 
         <div className="bg-[#F9FAFB] border border-[#cdd3db] shadow-sm rounded-2xl p-6 sm:p-8">
-          <div className={`${styles.tabContainer} mb-6 sm:mb-8`}>
-            {tabs.map((tab) => (
+          <div
+            className={`${styles.tabContainer} mb-6 sm:mb-8 flex gap-3 flex-wrap`}
+          >
+            {tabs.map(({ name, icon }) => (
               <button
-                key={tab.name}
-                aria-label={`Show ${tab.name} experience`}
-                onClick={() => setActiveTab(tab.name)}
-                className={`cursor-pointer flex flex-shrink-0 items-center gap-2 px-4 py-1.5 rounded-full font-medium transition-all duration-300 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#4F46E5] ${
-                  activeTab === tab.name
+                key={name}
+                aria-label={`Show ${name} experience`}
+                aria-pressed={activeTab === name}
+                onClick={() => setActiveTab(name)}
+                className={`cursor-pointer flex items-center gap-2 px-4 py-1.5 rounded-full font-medium transition-all duration-300 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#4F46E5] ${
+                  activeTab === name
                     ? "bg-[#4F46E5] text-white"
                     : "bg-[#E5E7EB] text-[#1F2937] hover:bg-[#D1D5DB]"
                 }`}
-                aria-pressed={activeTab === tab.name}
               >
-                {tab.icon}
-                <span className="text-sm sm:text-base">{tab.name}</span>
+                {icon}
+                <span className="text-sm sm:text-base">{name}</span>
               </button>
             ))}
           </div>

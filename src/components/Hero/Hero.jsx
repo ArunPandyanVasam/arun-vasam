@@ -8,7 +8,6 @@ const Hero = () => {
       id="home"
       className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] min-h-[90vh] flex items-center justify-center text-white overflow-hidden py-20 sm:py-24"
     >
-      {/* Background Overlay Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -17,14 +16,12 @@ const Hero = () => {
         }}
       ></div>
 
-      {/* Hero Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl gap-12"
       >
-        {/* Text Content */}
         <div className="text-center md:text-left max-w-2xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -67,7 +64,6 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        {/* Profile Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -82,7 +78,6 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
-      {/* Decorative Bottom Effects */}
       <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[2px] bg-gradient-to-r from-[#00B8D9] to-[#9333EA] animate-pulse opacity-60"></div>
       <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[150px] bg-gradient-to-b from-transparent to-[#111111] opacity-70"></div>
     </section>

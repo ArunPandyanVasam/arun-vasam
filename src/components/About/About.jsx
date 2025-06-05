@@ -60,10 +60,12 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
   ];
 
   return (
-    <section id="about" className="py-16 px-4 sm:px-6 md:px-12 bg-[#f3f5f9] text-[#111827]">
+    <section
+      id="about"
+      className="py-16 px-4 sm:px-6 md:px-12 bg-[#f3f5f9] text-[#111827]"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Text Section */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -109,7 +111,6 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
             </AnimatePresence>
           </motion.div>
 
-          {/* Image Section (Responsive Square) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}

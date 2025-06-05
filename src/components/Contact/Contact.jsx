@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaCheckCircle } from "react-icons/fa";
 
 const SERVICE_ID = "service_q08irat";
 const TEMPLATE_ID = "template_aqquj2k";
@@ -57,7 +58,6 @@ const Contact = () => {
       id="contact"
       className="min-h-screen bg-[#f3f5f9] text-[#1F2937] flex flex-col md:flex-row px-4 py-16"
     >
-      {/* Left panel (unchanged text content) */}
       <div className="w-full md:w-[45%] flex items-center justify-center p-6 md:p-10">
         <div className="max-w-sm w-full text-[#4F46E5]">
           <h3 className="text-2xl md:text-3xl font-bold mb-2">
@@ -65,15 +65,15 @@ const Contact = () => {
           </h3>
           <hr className="border-[#6366F1] border-2 mb-3 w-12" />
           <p className="text-sm md:text-base text-[#1F2937]">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m all ears.
+            Whether it’s a job opportunity, collaboration, or just a chat — I’m
+            all ears.
           </p>
         </div>
       </div>
 
-      {/* Right panel (rich form) */}
       <div className="w-full md:w-[55%] flex items-center justify-center p-6 md:p-10">
         <motion.div
-          className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-8"
+          className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -102,7 +102,7 @@ const Contact = () => {
                     value={formData[field]}
                     onChange={handleInputChange}
                     placeholder={`Enter your ${field}`}
-                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:shadow-md transition"
                   />
                 ) : (
                   <textarea
@@ -111,7 +111,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Write your message"
-                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:shadow-md transition"
                   />
                 )}
                 {errors[field] && (
@@ -122,7 +122,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all"
+              className="w-full py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-[1.02] transition-all cursor-pointer"
             >
               Send Message
             </button>
@@ -130,17 +130,17 @@ const Contact = () => {
         </motion.div>
       </div>
 
-      {/* Toast Notification */}
       <AnimatePresence>
         {showToast && (
           <motion.div
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white text-indigo-600 font-medium shadow-xl px-6 py-3 rounded-full border border-indigo-200 z-50"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white text-indigo-600 font-medium shadow-2xl px-6 py-3 rounded-full border border-indigo-200 backdrop-blur-md flex items-center gap-2 z-50"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.5 }}
           >
-            ✅ Message sent successfully!
+            <FaCheckCircle className="text-green-500" />
+            Message sent successfully!
           </motion.div>
         )}
       </AnimatePresence>
