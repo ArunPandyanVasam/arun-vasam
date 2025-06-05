@@ -1,13 +1,19 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "service_q08irat";
+const TEMPLATE_ID = "template_aqquj2k";
+const PUBLIC_KEY = "EIPn3GqyGr-IVfa7G";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showToast, setShowToast] = useState(false);
   const [errors, setErrors] = useState({});
 
   const handleInputChange = (e) => {
@@ -19,6 +25,7 @@ const Contact = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = "Name is required";
     if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.subject.trim()) newErrors.subject = "Subject is required";
     if (!formData.message.trim()) newErrors.message = "Message is required";
     return newErrors;
   };
@@ -30,148 +37,113 @@ const Contact = () => {
       setErrors(formErrors);
       return;
     }
-    // TODO: Replace with real submission logic
-    console.log(formData);
-    setIsSubmitted(true);
-    setErrors({});
+
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+      .then(() => {
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setErrors({});
+      })
+      .catch((err) => {
+        alert("Failed to send. Please try again later.");
+        console.error("EmailJS error:", err);
+      });
   };
 
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#f3f5f9] text-[#1F2937] flex flex-col md:flex-row"
+      className="min-h-screen bg-[#f3f5f9] text-[#1F2937] flex flex-col md:flex-row px-4 py-16"
     >
-      {/* Left panel: Original positioned content */}
-      <div className="w-full md:w-[45%] h-auto flex items-center justify-center p-8">
+      {/* Left panel (unchanged text content) */}
+      <div className="w-full md:w-[45%] flex items-center justify-center p-6 md:p-10">
         <div className="max-w-sm w-full text-[#4F46E5]">
           <h3 className="text-2xl md:text-3xl font-bold mb-2">
             Let’s connect and build something meaningful.
           </h3>
           <hr className="border-[#6366F1] border-2 mb-3 w-12" />
           <p className="text-sm md:text-base text-[#1F2937]">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m
-            all ears.
+            Whether it’s a job opportunity, collaboration, or just a chat — I’m all ears.
           </p>
         </div>
       </div>
 
-      {/* Right panel: Contact form */}
-      <div className="w-full md:w-[55%] flex flex-col p-8 md:p-12">
-        {!isSubmitted && (
-          <motion.div
-            className="mb-10 text-center"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 tracking-tight">
-              Get in Touch
-            </h2>
+      {/* Right panel (rich form) */}
+      <div className="w-full md:w-[55%] flex items-center justify-center p-6 md:p-10">
+        <motion.div
+          className="w-full max-w-xl bg-white rounded-2xl shadow-lg p-8"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">
+            Get in Touch
+          </h2>
+          <p className="text-center text-gray-600 mb-6">
+            Reach out for work, feedback, or anything else — I’m listening.
+          </p>
 
-            <p className="mt-4 text-[#1F2937] text-base sm:text-lg max-w-xl mx-auto">
-              Feel free to reach out about work, feedback, or anything else.
-            </p>
+          <form onSubmit={handleSubmit} noValidate className="space-y-6">
+            {["name", "email", "subject", "message"].map((field) => (
+              <div key={field} className="relative">
+                <label
+                  htmlFor={field}
+                  className="text-sm text-[#6366F1] font-medium"
+                >
+                  {field.charAt(0).toUpperCase() + field.slice(1)}
+                </label>
+                {field !== "message" ? (
+                  <input
+                    type={field === "email" ? "email" : "text"}
+                    name={field}
+                    value={formData[field]}
+                    onChange={handleInputChange}
+                    placeholder={`Enter your ${field}`}
+                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  />
+                ) : (
+                  <textarea
+                    name="message"
+                    rows="5"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Write your message"
+                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  />
+                )}
+                {errors[field] && (
+                  <p className="text-red-500 text-xs mt-1">{errors[field]}</p>
+                )}
+              </div>
+            ))}
+
+            <button
+              type="submit"
+              className="w-full py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-all"
+            >
+              Send Message
+            </button>
+          </form>
+        </motion.div>
+      </div>
+
+      {/* Toast Notification */}
+      <AnimatePresence>
+        {showToast && (
+          <motion.div
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white text-indigo-600 font-medium shadow-xl px-6 py-3 rounded-full border border-indigo-200 z-50"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 40 }}
+            transition={{ duration: 0.5 }}
+          >
+            ✅ Message sent successfully!
           </motion.div>
         )}
-
-        <div
-          className="max-w-xl w-full bg-[#F9FAFB] shadow-md rounded-xl border border-[#cdd3db] p-8 mx-auto transition-all duration-300"
-          aria-live="polite"
-        >
-          {isSubmitted ? (
-            <motion.div
-              className="text-center"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-              <h3 className="text-2xl font-semibold text-[#6366F1]">
-                Thank you!
-              </h3>
-              <p className="text-[#475569] mt-2">
-                Your message has been sent — I’ll be in touch shortly.
-              </p>
-            </motion.div>
-          ) : (
-            <form onSubmit={handleSubmit} noValidate className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-[#6366F1]"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  autoComplete="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className="w-full mt-2 p-3 border border-[#E2E8F0] rounded-lg bg-white text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
-                  placeholder="Your Name"
-                />
-                {errors.name && (
-                  <p className="text-red-600 text-sm mt-2">{errors.name}</p>
-                )}
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-[#6366F1]"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  autoComplete="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full mt-2 p-3 border border-[#E2E8F0] rounded-lg bg-white text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
-                  placeholder="Your Email"
-                />
-                {errors.email && (
-                  <p className="text-red-600 text-sm mt-2">{errors.email}</p>
-                )}
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-[#6366F1]"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="6"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  className="w-full mt-2 p-3 border border-[#E2E8F0] rounded-lg bg-white text-[#1F2937] placeholder-[#94A3B8] focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-[#6366F1] transition-all duration-300"
-                  placeholder="Your Message"
-                />
-                {errors.message && (
-                  <p className="text-red-600 text-sm mt-2">{errors.message}</p>
-                )}
-              </div>
-
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="cursor-pointer w-full py-3 px-6 bg-[#6366F1] text-white rounded-lg text-lg font-semibold hover:bg-[#4338CA] transition-all duration-300"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          )}
-        </div>
-      </div>
+      </AnimatePresence>
     </section>
   );
 };
