@@ -39,21 +39,22 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#f6eef0] text-[#1F2937] flex flex-col md:flex-row"
+      className="min-h-screen bg-[#F9FAFB] text-[#1F2937] flex flex-col md:flex-row"
     >
+      {/* Left panel: Original positioned content */}
       <div className="w-full md:w-[45%] h-auto flex items-center justify-center p-8">
-        <div className="max-w-sm w-full text-[#6366F1]">
+        <div className="max-w-sm w-full text-[#4F46E5]">
           <h3 className="text-2xl md:text-3xl font-bold mb-2">
             Let’s connect and build something meaningful.
           </h3>
           <hr className="border-[#6366F1] border-2 mb-3 w-12" />
           <p className="text-sm md:text-base text-[#1F2937]">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m
-            all ears.
+            Whether it’s a job opportunity, collaboration, or just a chat — I’m all ears.
           </p>
         </div>
       </div>
 
+      {/* Right panel: Contact form */}
       <div className="w-full md:w-[55%] flex flex-col p-8 md:p-12">
         {!isSubmitted && (
           <motion.div

@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#f6eef0] shadow-md">
+    <header className="sticky top-0 z-50 bg-[#F9FAFB] shadow-md">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-2xl font-bold tracking-wide text-[#1F2937]">
           ARUN

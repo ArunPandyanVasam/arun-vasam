@@ -6,6 +6,8 @@ import professionalData from "../../data/experience.json";
 import partTimeData from "../../data/partTime.json";
 import educationData from "../../data/education.json";
 
+import styles from "./Experience.module.css";
+
 const tabs = [
   { name: "Professional", icon: <FaBriefcase /> },
   { name: "Part-Time", icon: <FaClock /> },
@@ -72,7 +74,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-16 px-4 sm:px-6 md:px-12 bg-[#f6eef0] text-[#1F2937]"
+      className="py-16 px-4 sm:px-6 md:px-12 bg-[#F9FAFB] text-[#1F2937]"
     >
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -91,7 +93,7 @@ const Experience = () => {
         </motion.div>
 
         <div className="bg-[#f2f1f0] border border-[#cdd3db] shadow-sm rounded-2xl p-6 sm:p-8">
-          <div className="flex gap-3 overflow-x-auto no-scrollbar mb-6 sm:mb-8">
+          <div className={`${styles.tabContainer} mb-6 sm:mb-8`}>
             {tabs.map((tab) => (
               <button
                 key={tab.name}
