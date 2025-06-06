@@ -66,7 +66,7 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-14">
-          {/* Text Section */}
+
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -81,7 +81,6 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
               Meet <span className="text-[#5da9e2]">Arun Vasam</span>
             </h2>
 
-            {/* Tabs */}
             <div className="flex justify-center lg:justify-start gap-3 flex-wrap mb-6">
               {tabs.map((tab) => (
                 <button
@@ -98,7 +97,6 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
               ))}
             </div>
 
-            {/* Tab Content */}
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -114,7 +112,6 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
             </AnimatePresence>
           </motion.div>
 
-          {/* Image and Socials */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}

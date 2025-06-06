@@ -10,7 +10,7 @@ const Projects = () => {
       className="w-full py-20 px-6 md:px-12 bg-[#030712] text-[#f1f5f9]"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+
         <div className="mb-16 text-center">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5da9e2] to-[#6531c8] tracking-tight">
             Projects I've Built
@@ -20,7 +20,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Project Cards */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.div
