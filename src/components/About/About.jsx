@@ -26,7 +26,7 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
 
   const renderContent = () =>
     tabContent[activeTab].split("\n").map((line, index) => (
-      <p key={index} className="mb-2 text-gray-700">
+      <p key={index} className="mb-2 text-white">
         {line}
       </p>
     ));
@@ -62,33 +62,35 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
   return (
     <section
       id="about"
-      className="py-20 px-4 sm:px-8 md:px-12 bg-[#f9fafb] text-[#111827]"
+      className="py-20 px-4 sm:px-8 md:px-12 bg-[#030712] text-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-14">
+          {/* Text Section */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="w-full lg:w-1/2"
           >
-            <p className="text-indigo-500 text-xs uppercase tracking-widest mb-3 text-center lg:text-left">
+            <p className="text-[#5da9e2] text-xs uppercase tracking-widest mb-3 text-center lg:text-left select-none">
               Developer · Problem Solver · Innovator
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-8 leading-snug text-center lg:text-left text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
-              Meet <span className="text-indigo-700">Arun Vasam</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-8 leading-snug text-center lg:text-left text-transparent bg-clip-text bg-gradient-to-r from-[#6531c8] to-[#5da9e2]">
+              Meet <span className="text-[#5da9e2]">Arun Vasam</span>
             </h2>
 
+            {/* Tabs */}
             <div className="flex justify-center lg:justify-start gap-3 flex-wrap mb-6">
               {tabs.map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-sm ${
+                  className={`cursor-pointer px-4 py-1.5 text-sm font-medium rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#6531c8] shadow-sm ${
                     activeTab === tab
-                      ? "bg-indigo-600 text-white"
-                      : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+                      ? "bg-[#6531c8] text-white"
+                      : "bg-[#0f172a] text-white hover:bg-[#5da9e2]"
                   }`}
                 >
                   {tab}
@@ -96,6 +98,7 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
               ))}
             </div>
 
+            {/* Tab Content */}
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
@@ -111,13 +114,14 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
             </AnimatePresence>
           </motion.div>
 
+          {/* Image and Socials */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="w-full max-w-sm sm:max-w-md lg:w-1/2 flex flex-col items-center"
           >
-            <div className="w-full aspect-square rounded-xl overflow-hidden shadow-xl border border-indigo-100">
+            <div className="w-full aspect-square rounded-xl overflow-hidden shadow-xl border border-[#5da9e2]">
               <img
                 src="/assets/about/about.jpg"
                 alt="About Arun Vasam"
@@ -134,7 +138,7 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="p-2 text-gray-600 hover:text-indigo-600 rounded-full transition hover:bg-indigo-100"
+                  className="p-2 text-white hover:text-[#5da9e2] rounded-full transition hover:bg-[#0f172a]"
                 >
                   {icon}
                 </a>

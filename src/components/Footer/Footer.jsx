@@ -6,15 +6,15 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#f3f5f9] text-[#1F2937] py-10 mt-0">
+    <footer className="bg-[#0f172a] text-[#f1f5f9] py-10 mt-0">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-10">
           <div className="text-center sm:text-left">
-            <h3 className="text-2xl font-semibold text-[#6366F1] inline-block relative group">
+            <h3 className="text-2xl font-semibold text-indigo-400 inline-block relative group">
               Get in Touch
-              <span className="block h-0.5 w-0 group-hover:w-full bg-[#6366F1] transition-all duration-500"></span>
+              <span className="block h-0.5 w-0 group-hover:w-full bg-indigo-400 transition-all duration-500"></span>
             </h3>
-            <p className="text-[#374151] mt-2 text-sm sm:text-base font-light">
+            <p className="text-slate-400 mt-2 text-sm sm:text-base font-light">
               Feel free to reach out anytime!
             </p>
           </div>
@@ -43,10 +43,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-[#a0a4a8] pt-6 text-center">
-          <p className="text-sm text-[#64748b]">
+        <div className="border-t border-slate-600 pt-6 text-center">
+          <p className="text-sm text-slate-400">
             &copy; {currentYear}{" "}
-            <span className="font-semibold">Arunvasam</span>. Let’s build
+            <span className="font-semibold text-indigo-400">Arunvasam</span>. Let’s build
             something great together!
           </p>
         </div>
@@ -61,7 +61,7 @@ const SocialIcon = ({ href, label, Icon }) => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="text-[#334155] hover:text-purple-600 hover:scale-110 transform transition-all duration-300"
+    className="text-slate-400 hover:text-indigo-400 hover:scale-110 transform transition-all duration-300"
   >
     <Icon size={22} />
   </a>

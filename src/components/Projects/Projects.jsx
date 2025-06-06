@@ -7,15 +7,15 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full py-20 px-6 md:px-12 bg-[#f3f5f9] text-[#111827]"
+      className="w-full py-20 px-6 md:px-12 bg-[#030712] text-[#f1f5f9]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5da9e2] to-[#6531c8] tracking-tight">
             Projects I've Built
           </h2>
-          <p className="mt-4 text-base sm:text-lg max-w-xl mx-auto text-[#4B5563]">
+          <p className="mt-4 text-base sm:text-lg max-w-xl mx-auto text-[#a5b4fc]">
             From ideas to deployment — here are some elegant solutions.
           </p>
         </div>
@@ -30,14 +30,13 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="overflow-hidden rounded-2xl border border-gray-200 bg-[#F9FAFB] shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 hover:scale-[1.02] duration-300">
-                {/* Make image + title + description clickable */}
+              <div className="overflow-hidden rounded-2xl border border-[#2f354f] bg-[#111827] shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 hover:scale-[1.02] duration-300">
                 <a
                   href={project.demo}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Live demo of ${project.title}`}
-                  className="block focus:outline-none focus:ring-4 focus:ring-indigo-300 rounded-t-2xl"
+                  className="block focus:outline-none rounded-t-2xl"
                 >
                   <img
                     src={project.image}
@@ -46,11 +45,11 @@ const Projects = () => {
                     className="w-full h-[220px] object-cover transition-transform duration-500 hover:scale-105"
                   />
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-indigo-600">
+                    <h3 className="text-xl font-bold text-[#5da9e2]">
                       {project.title}
                     </h3>
-                    <div className="h-[2px] w-12 bg-indigo-600 rounded my-2"></div>
-                    <p className="text-sm text-gray-700 leading-relaxed">
+                    <div className="h-[1px] w-10 bg-[#5da9e2] rounded my-2"></div>
+                    <p className="text-sm text-[#e2e8f0] leading-relaxed">
                       {project.description}
                     </p>
                   </div>
@@ -62,7 +61,7 @@ const Projects = () => {
                       <span
                         key={i}
                         title={tech}
-                        className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-medium tracking-wide shadow-sm"
+                        className="bg-[#292e42] text-[#98baf2] px-3 py-1 rounded-full text-xs font-medium tracking-wide shadow-sm"
                       >
                         {tech}
                       </span>
@@ -76,7 +75,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       title="GitHub Repo"
                       aria-label={`GitHub repository for ${project.title}`}
-                      className="text-indigo-500 text-xl hover:text-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded"
+                      className="text-[#5da9e2] text-xl hover:text-[#7bb5f4] transition focus:outline-none rounded"
                     >
                       <FaGithub />
                     </a>
@@ -86,7 +85,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       title="Live Demo"
                       aria-label={`Live demo for ${project.title}`}
-                      className="text-indigo-500 text-xl hover:text-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-400 rounded"
+                      className="text-[#5da9e2] text-xl hover:text-[#7bb5f4] transition focus:outline-none rounded"
                     >
                       <FaExternalLinkAlt />
                     </a>

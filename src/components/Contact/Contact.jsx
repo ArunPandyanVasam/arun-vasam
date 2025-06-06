@@ -56,33 +56,32 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#f3f5f9] text-[#1F2937] flex flex-col md:flex-row px-4 py-16"
+      className="min-h-screen bg-[#030712] text-[#f1f5f9] flex flex-col md:flex-row px-4 py-16"
     >
       <div className="w-full md:w-[45%] flex items-center justify-center p-6 md:p-10">
-        <div className="max-w-sm w-full text-[#4F46E5]">
+        <div className="max-w-sm w-full text-[#5da9e2]">
           <h3 className="text-2xl md:text-3xl font-bold mb-2">
             Let’s connect and build something meaningful.
           </h3>
-          <hr className="border-[#6366F1] border-2 mb-3 w-12" />
-          <p className="text-sm md:text-base text-[#1F2937]">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m
-            all ears.
+          <hr className="border-[#6531c8] border-2 mb-3 w-12" />
+          <p className="text-sm md:text-base text-[#cabdad]">
+            Whether it’s a job opportunity, collaboration, or just a chat — I’m all ears.
           </p>
         </div>
       </div>
 
       <div className="w-full md:w-[55%] flex items-center justify-center p-6 md:p-10">
         <motion.div
-          className="w-full max-w-lg bg-white rounded-2xl shadow-lg p-8"
+          className="w-full max-w-lg bg-[#1e293b] border border-[#2f354f] rounded-2xl shadow-[0_0_20px_rgba(101,49,200,0.15)] p-8"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#6531c8] to-[#5da9e2]">
             Get in Touch
           </h2>
-          <p className="text-center text-gray-600 mb-6">
+          <p className="text-center text-[#cabdad] mb-6">
             Reach out for work, feedback, or anything else — I’m listening.
           </p>
 
@@ -91,7 +90,7 @@ const Contact = () => {
               <div key={field} className="relative">
                 <label
                   htmlFor={field}
-                  className="text-sm text-[#6366F1] font-medium"
+                  className="text-sm text-[#5da9e2] font-medium"
                 >
                   {field.charAt(0).toUpperCase() + field.slice(1)}
                 </label>
@@ -102,7 +101,7 @@ const Contact = () => {
                     value={formData[field]}
                     onChange={handleInputChange}
                     placeholder={`Enter your ${field}`}
-                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:shadow-md transition"
+                    className="w-full mt-1 px-4 py-3 text-sm bg-[#0f172a] border border-[#2f354f] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5da9e2] focus:shadow-md hover:border-[#5da9e2] transition"
                   />
                 ) : (
                   <textarea
@@ -111,18 +110,18 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Write your message"
-                    className="w-full mt-1 px-4 py-3 text-sm bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:shadow-md transition"
+                    className="w-full mt-1 px-4 py-3 text-sm bg-[#0f172a] border border-[#2f354f] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#5da9e2] focus:shadow-md hover:border-[#5da9e2] transition"
                   />
                 )}
                 {errors[field] && (
-                  <p className="text-red-500 text-xs mt-1">{errors[field]}</p>
+                  <p className="text-[#f87171] text-xs mt-1">{errors[field]}</p>
                 )}
               </div>
             ))}
 
             <button
               type="submit"
-              className="w-full py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg hover:scale-[1.02] transition-all cursor-pointer"
+              className="w-full py-3 bg-gradient-to-r from-[#6531c8] to-[#5da9e2] text-white rounded-xl font-semibold hover:shadow-lg hover:scale-[1.02] transition-all cursor-pointer"
             >
               Send Message
             </button>
@@ -133,13 +132,13 @@ const Contact = () => {
       <AnimatePresence>
         {showToast && (
           <motion.div
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white text-indigo-600 font-medium shadow-2xl px-6 py-3 rounded-full border border-indigo-200 backdrop-blur-md flex items-center gap-2 z-50"
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#1e293b] text-[#5da9e2] font-medium shadow-2xl px-6 py-3 rounded-full border border-[#6531c8] backdrop-blur-md flex items-center gap-2 z-50"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.5 }}
           >
-            <FaCheckCircle className="text-green-500" />
+            <FaCheckCircle className="text-[#4ade80]" />
             Message sent successfully!
           </motion.div>
         )}

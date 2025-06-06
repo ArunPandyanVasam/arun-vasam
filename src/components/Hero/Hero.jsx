@@ -6,15 +6,23 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-r from-[#A855F7] to-[#9333EA] min-h-[90vh] flex items-center justify-center text-white overflow-hidden py-20 sm:py-24"
+      className="relative min-h-[90vh] flex items-center justify-center text-white overflow-hidden py-20 sm:py-24"
+      style={{ backgroundColor: "#030712" }}
     >
+      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: "url('/assets/hero/hero_background.jpg')",
-          filter: "brightness(35%)",
+          zIndex: 0,
         }}
-      ></div>
+      />
+
+      {/* Partial dark overlay for #030712 with opacity */}
+      <div
+        className="absolute inset-0"
+        style={{ backgroundColor: "rgba(3, 7, 18, 0.95)", zIndex: 1 }}
+      />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -78,6 +86,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
 
+      {/* Bottom gradients */}
       <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[2px] bg-gradient-to-r from-[#00B8D9] to-[#9333EA] animate-pulse opacity-60"></div>
       <div className="absolute bottom-0 left-0 right-0 mx-auto w-full h-[150px] bg-gradient-to-b from-transparent to-[#111111] opacity-70"></div>
     </section>
