@@ -10,12 +10,12 @@ const Projects = () => {
       className="w-full py-20 px-6 md:px-12 bg-[#030712] text-[#f1f5f9]"
     >
       <div className="max-w-7xl mx-auto">
-
         <div className="mb-16 text-center">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5da9e2] to-[#6531c8] tracking-tight">
-            Projects I've Built
+          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#6531c8] uppercase">
+            WORK SHOWCASE
           </h2>
-          <p className="mt-4 text-base sm:text-lg max-w-xl mx-auto text-[#a5b4fc]">
+
+          <p className="mt-4 text-base sm:text-lg max-w-xl mx-auto text-white">
             From ideas to deployment — here are some elegant solutions.
           </p>
         </div>

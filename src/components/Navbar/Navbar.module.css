@@ -1,11 +1,14 @@
-/* src/components/Navbar/Navbar.module.css */
-
-.glowIcon {
-  color: #a855f7;
-  transition: all 0.3s ease-in-out;
-  filter: drop-shadow(0 0 4px #a855f7);
+.navItem {
+  color: white;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-.glowIcon:hover {
-  filter: drop-shadow(0 0 8px #a855f7) brightness(1.2);
+.navItem:hover {
+  color: #5da9e2;
+}
+
+.activeNav {
+  color: #6531c8;
+  font-weight: 800;
 }

@@ -64,8 +64,9 @@ const Contact = () => {
             Let’s connect and build something meaningful.
           </h3>
           <hr className="border-[#6531c8] border-2 mb-3 w-12" />
-          <p className="text-sm md:text-base text-[#cabdad]">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m all ears.
+          <p className="text-sm md:text-base text-white">
+            Whether it’s a job opportunity, collaboration, or just a chat — I’m
+            all ears.
           </p>
         </div>
       </div>
@@ -78,10 +79,11 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#6531c8] to-[#5da9e2]">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-2 text-[#6531c8]">
             Get in Touch
           </h2>
-          <p className="text-center text-[#cabdad] mb-6">
+
+          <p className="text-center text-white mb-6">
             Reach out for work, feedback, or anything else — I’m listening.
           </p>
 

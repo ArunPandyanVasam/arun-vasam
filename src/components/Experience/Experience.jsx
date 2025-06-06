@@ -86,10 +86,11 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#6531c8] to-[#5da9e2] tracking-tight">
-            My Journey in Work & Education
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#6531c8] uppercase">
+            ACADEMIC & PROFESSIONAL EXPERIENCE
           </h2>
-          <p className="text-[#cabdadaa] text-sm sm:text-base mt-3 max-w-xl mx-auto">
+
+          <p className="text-white text-sm sm:text-base mt-3 max-w-xl mx-auto">
             A collection of my professional experiences and academic milestones.
           </p>
         </motion.div>

@@ -59,8 +59,8 @@ const Hero = () => {
           >
             <Link
               to="projects"
-              smooth={true}
-              duration={600}
+              // smooth={true}
+              // duration={600}
               offset={-80}
               tabIndex={0}
               className="inline-block bg-[#00B8D9] text-[#111111] py-3 px-8 rounded-full text-lg font-semibold shadow-md hover:shadow-xl transition-transform hover:scale-105 ease-in-out cursor-pointer focus:outline-none focus:ring-4 focus:ring-[#00B8D9]"
