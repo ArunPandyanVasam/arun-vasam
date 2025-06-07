@@ -9,19 +9,21 @@ const About = () => {
   const tabs = ["Story", "Skills", "Tools"];
 
   const tabContent = {
-    Story: `I'm an aspiring software developer with a solid foundation in programming fundamentals and a passion for building meaningful, real-world solutions. My journey began with a curiosity for how technology works under the hood — what started as small scripting experiments grew into full-stack applications and a drive for continuous learning.
+    Story: `I'm an aspiring Software Developer with a strong foundation in computer science fundamentals and a deep curiosity about how systems work under the hood. My journey began with small coding experiments, which evolved into building real-world projects and exploring scalable backend systems.
+    I have hands-on experience in object-oriented programming, data structures and algorithms, relational and non-relational databases, and RESTful API development. I particularly enjoy solving complex problems, designing clean system architecture, and writing maintainable code.
+    Currently, I'm deepening my skills through consistent, structured learning and backend-focused projects. I'm seeking an opportunity to contribute to a collaborative, engineering-driven environment where I can apply my knowledge, grow with a team, and make a meaningful impact as a developer.`,
 
-I’ve gained hands-on experience in object-oriented programming, data structures and algorithms, web development, databases, and networks. I enjoy working on projects that challenge me to think critically and solve problems creatively.
+    Skills: `• Programming Languages: Python, Java
+    • Core CS: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks, DBMS, Operating Systems
+    • Backend: REST API Development, SQL & NoSQL Databases (MySQL, MongoDB)
+    • System Design: Low-Level Design Principles
+    • Version Control & Collaboration: Git, GitHub`,
 
-Currently, I’m expanding my skill set, exploring new technologies, and contributing to practical projects. I'm excited to join a forward-thinking team where I can grow, collaborate, and make an impact as a developer.`,
-
-    Skills: `• JavaScript (ES6+), Python, Flask, React, HTML/CSS
-• Machine Learning, Data Analysis, REST API Development
-• UI/UX Fundamentals, Responsive Design, Git Version Control`,
-
-    Tools: `• VS Code, GitHub, Postman, Figma
-• scikit-learn, pandas, matplotlib, Excel
-• Netlify, Vercel, Render, Railway`
+    Tools: `• Development: VS Code, IntelliJ IDEA
+    • API & Testing: Postman
+    • Database: MySQL Workbench, MongoDB Compass
+    • Deployment: Render, Railway, Netlify, Vercel
+    • Design & PM: Figma, Trello, Jira`,
   };
 
   const renderContent = () =>
@@ -33,30 +35,30 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
 
   const tabContentVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   const socialLinks = [
     {
       label: "GitHub",
       href: "https://github.com/ArunPandyanVasam",
-      icon: <FaGithub size={22} />
+      icon: <FaGithub size={22} />,
     },
     {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/arun-vasam/",
-      icon: <FaLinkedin size={22} />
+      icon: <FaLinkedin size={22} />,
     },
     {
       label: "Twitter",
       href: "https://x.com/APandyan",
-      icon: <FaTwitter size={22} />
+      icon: <FaTwitter size={22} />,
     },
     {
       label: "Email",
       href: "mailto:arunpandyanv@gmail.com",
-      icon: <MdEmail size={22} />
-    }
+      icon: <MdEmail size={22} />,
+    },
   ];
 
   return (
@@ -66,7 +68,6 @@ Currently, I’m expanding my skill set, exploring new technologies, and contrib
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-14">
-
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
