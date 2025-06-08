@@ -48,7 +48,7 @@ const Projects = () => {
                       {project.title}
                     </h3>
                     <div className="h-[1px] w-10 bg-[#5da9e2] rounded my-2"></div>
-                    <p className="text-sm text-[#e2e8f0] leading-relaxed">
+                    <p className="text-sm text-[#e2e8f0] leading-relaxed min-h-[140px]">
                       {project.description}
                     </p>
                   </div>

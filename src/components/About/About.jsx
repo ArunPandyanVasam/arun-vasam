@@ -79,7 +79,7 @@ const About = () => {
             </p>
 
             <h2 className="text-4xl md:text-5xl font-extrabold mb-8 leading-snug text-center lg:text-left text-transparent bg-clip-text bg-gradient-to-r from-[#6531c8] to-[#5da9e2]">
-              Meet <span className="text-[#5da9e2]">Arun Vasam</span>
+              ABOUT <span className="text-[#5da9e2]">ME</span>
             </h2>
 
             <div className="flex justify-center lg:justify-start gap-3 flex-wrap mb-6">

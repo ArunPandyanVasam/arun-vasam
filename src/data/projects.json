@@ -1,23 +1,23 @@
 [
   {
-    "title": "Multiplication Game",
-    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
+    "title": "Milano Digital Front",
+    "description": "Milano Digital Front is an MVP website concept for a new hardware and interiors store. Created after learning the business had no online presence during a job interview, it showcased initiative. While they chose to outsource, the effort was acknowledged and well received.",
     "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
     ],
-    "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
-    "demo": "https://gamemultiplication.netlify.app/",
+    "github": "https://github.com/ArunPandyanVasam/Milano",
+    "demo": "https://milano-digital-front.netlify.app/",
     "image": "/assets/projects/avatar.jpg"
   },
   {
     "title": "Dynamic Surge Price",
-    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
+    "description": "A surge pricing simulation tool that calculates real-time order costs based on live weather data. Users input their location to view base pricing, weather surcharges, and total cost. It models real-world pricing logic to enhance transparency and better user understanding of dynamic cost changes.",
     "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "React",
+      "Flask",
+      "React Router"
     ],
     "github": "https://github.com/ArunPandyanVasam/dynamic-surge-pricing-frontend",
     "demo": "https://dynamic-surge-pricing.vercel.app/",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Multiplication Game",
-    "description": "A fun, interactive multiplication game that helps users practice math and improve skills through modern web technologies with score-based play.",
+    "description": "An engaging and interactive multiplication game designed to help users strengthen their math skills in a playful way. Featuring score-based challenges, the game encourages quick thinking and accuracy while offering a fun learning experience through a clean, responsive, and user-friendly interface.",
     "tech": [
       "HTML",
       "CSS",
