@@ -11,7 +11,7 @@ const About = () => {
   const tabContent = {
     Story: `I'm an aspiring Software Developer with a strong foundation in computer science fundamentals and a deep curiosity about how systems work under the hood. My journey began with small coding experiments, which evolved into building real-world projects and exploring scalable backend systems.
             I have hands-on experience in object-oriented programming, data structures and algorithms, relational and non-relational databases, and RESTful API development. I particularly enjoy solving complex problems, designing clean system architecture, and writing maintainable code.
-            Currently, I'm deepening my skills through consistent, structured learning and backend-focused projects. I'm seeking an opportunity to contribute to a collaborative, engineering-driven environment where I can apply my knowledge, grow with a team, and make a meaningful impact as a developer.`,
+            Currently, I'm deepening my skills through consistent, structured learning and full stack projects. I'm seeking an opportunity to contribute to a collaborative, engineering-driven environment where I can apply my knowledge, grow with a team, and make a meaningful impact as a developer.`,
 
     Skills: `• Programming Languages: Python, Java
              • Core CS: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks, DBMS, Operating Systems
