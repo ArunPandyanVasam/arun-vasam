@@ -1,7 +1,7 @@
 [
   {
     "title": "Milano Digital Front",
-    "description": "Milano Digital Front is an MVP website concept for a new hardware and interiors store. Created after learning the business had no online presence during a job interview, it showcased initiative. While they chose to outsource, the effort was acknowledged and well received.",
+    "description": "An MVP website concept created for a new hardware and interiors store lacking an online presence. Developed after discovering this during a job interview, the project demonstrated initiative and was well received, even though the store ultimately chose to outsource their website.",
     "tech": [
       "React",
       "Tailwind CSS",
@@ -13,7 +13,7 @@
   },
   {
     "title": "Dynamic Surge Price",
-    "description": "A surge pricing simulation tool that calculates real-time order costs based on live weather data. Users input their location to view base pricing, weather surcharges, and total cost. It models real-world pricing logic to enhance transparency and better user understanding of dynamic cost changes.",
+    "description": "A dynamic surge pricing tool that calculates real-time order costs using live weather data. Users enter their location to view base price, weather surcharge, and final total. This app models real-world pricing strategies to enhance transparency and empower informed user decisions.",
     "tech": [
       "React",
       "Flask",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Multiplication Game",
-    "description": "An engaging and interactive multiplication game designed to help users strengthen their math skills in a playful way. Featuring score-based challenges, the game encourages quick thinking and accuracy while offering a fun learning experience through a clean, responsive, and user-friendly interface.",
+    "description": "An interactive multiplication game designed to help users improve math skills through fun, score-based challenges. It promotes quick thinking and accuracy within a clean, responsive, and user-friendly interface, offering an engaging and effective learning experience.",
     "tech": [
       "HTML",
       "CSS",

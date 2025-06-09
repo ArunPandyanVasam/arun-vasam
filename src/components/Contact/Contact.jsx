@@ -61,12 +61,11 @@ const Contact = () => {
       <div className="w-full md:w-[45%] flex items-center justify-center p-6 md:p-10">
         <div className="max-w-sm w-full text-[#5da9e2]">
           <h3 className="text-2xl md:text-3xl font-bold mb-2">
-            Let’s connect and build something meaningful.
+            Open to opportunities
           </h3>
           <hr className="border-[#6531c8] border-2 mb-3 w-12" />
           <p className="text-sm md:text-base text-white">
-            Whether it’s a job opportunity, collaboration, or just a chat — I’m
-            all ears.
+            let’s connect and explore how I can add value to your team.
           </p>
         </div>
       </div>
@@ -84,7 +83,8 @@ const Contact = () => {
           </h2>
 
           <p className="text-center text-white mb-6">
-            Reach out for work, feedback, or anything else — I’m listening.
+            Feel free to connect for work, feedback, or any opportunity —
+            looking forward to hearing from you.
           </p>
 
           <form onSubmit={handleSubmit} noValidate className="space-y-6">
