@@ -9,7 +9,7 @@
     ],
     "github": "https://github.com/ArunPandyanVasam/Milano",
     "demo": "https://milano-digital-front.netlify.app/",
-    "image": "/assets/projects/avatar.jpg"
+    "image": "/assets/projects/milano-digital-front.jpg"
   },
   {
     "title": "Dynamic Surge Price",
@@ -21,7 +21,7 @@
     ],
     "github": "https://github.com/ArunPandyanVasam/dynamic-surge-pricing-frontend",
     "demo": "https://dynamic-surge-pricing.vercel.app/",
-    "image": "/assets/projects/avatar.jpg"
+    "image": "/assets/projects/dynamic-surge-price.jpg"
   },
   {
     "title": "Multiplication Game",
@@ -33,6 +33,6 @@
     ],
     "github": "https://github.com/ArunPandyanVasam/Multiplication-App",
     "demo": "https://gamemultiplication.netlify.app/",
-    "image": "/assets/projects/avatar.jpg"
+    "image": "/assets/projects/multiplication-game.jpg"
   }
 ]
