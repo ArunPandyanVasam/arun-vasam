@@ -10,20 +10,20 @@ const About = () => {
 
   const tabContent = {
     Story: `I'm an aspiring Software Developer with a strong foundation in computer science fundamentals and a deep curiosity about how systems work under the hood. My journey began with small coding experiments, which evolved into building real-world projects and exploring scalable backend systems.
-    I have hands-on experience in object-oriented programming, data structures and algorithms, relational and non-relational databases, and RESTful API development. I particularly enjoy solving complex problems, designing clean system architecture, and writing maintainable code.
-    Currently, I'm deepening my skills through consistent, structured learning and backend-focused projects. I'm seeking an opportunity to contribute to a collaborative, engineering-driven environment where I can apply my knowledge, grow with a team, and make a meaningful impact as a developer.`,
+I have hands-on experience in object-oriented programming, data structures and algorithms, relational and non-relational databases, and RESTful API development. I particularly enjoy solving complex problems, designing clean system architecture, and writing maintainable code.
+Currently, I'm deepening my skills through consistent, structured learning and backend-focused projects. I'm seeking an opportunity to contribute to a collaborative, engineering-driven environment where I can apply my knowledge, grow with a team, and make a meaningful impact as a developer.`,
 
     Skills: `• Programming Languages: Python, Java
-    • Core CS: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks, DBMS, Operating Systems
-    • Backend: REST API Development, SQL & NoSQL Databases (MySQL, MongoDB)
-    • System Design: Low-Level Design Principles
-    • Version Control & Collaboration: Git, GitHub`,
+• Core CS: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks, DBMS, Operating Systems
+• Backend: REST API Development, SQL & NoSQL Databases (MySQL, MongoDB)
+• System Design: Low-Level Design Principles
+• Version Control & Collaboration: Git, GitHub`,
 
     Tools: `• Development: VS Code, IntelliJ IDEA
-    • API & Testing: Postman
-    • Database: MySQL Workbench, MongoDB Compass
-    • Deployment: Render, Railway, Netlify, Vercel
-    • Design & PM: Figma, Trello, Jira`,
+• API & Testing: Postman
+• Database: MySQL Workbench, MongoDB Compass
+• Deployment: Render, Railway, Netlify, Vercel
+• Design & PM: Figma, Trello, Jira`,
   };
 
   const renderContent = () =>
@@ -68,6 +68,7 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-14">
+          {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -113,16 +114,17 @@ const About = () => {
             </AnimatePresence>
           </motion.div>
 
+          {/* Right Image & Socials */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="w-full max-w-sm sm:max-w-md lg:w-1/2 flex flex-col items-center"
+            className="w-full max-w-sm md:max-w-md lg:w-1/2 flex flex-col items-center mt-4 md:mt-12"
           >
-            <div className="w-full aspect-square rounded-xl overflow-hidden shadow-xl border border-[#5da9e2]">
+            <div className="w-full aspect-square md:aspect-[4/3] rounded-xl overflow-hidden shadow-xl border border-[#5da9e2]">
               <img
                 src="/assets/about/about.jpg"
-                alt="About Arun Vasam"
+                alt="Quote"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
