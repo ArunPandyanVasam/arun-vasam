@@ -48,7 +48,7 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-base sm:text-lg md:text-xl text-white/90 font-medium mb-8"
           >
-            A Software Developer dedicated to solving real-world problems
+            A Software Engineer dedicated to solving real-world problems
             through innovative, purposeful solutions.
           </motion.p>
 
