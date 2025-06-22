@@ -24,6 +24,18 @@
     "image": "/assets/projects/dynamic-surge-price.jpg"
   },
   {
+    "title": "SoloTravel UI",
+    "description": "SoloTravel UI is a sleek and modern user interface project designed to showcase a travel-themed webpage. It highlights destinations, experiences, and solo travel benefits using a clean React + Vite setup, perfect for design inspiration or front-end portfolio demonstration.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/ArunPandyanVasam/TravelApp-Frontend",
+    "demo": "https://solotravel.netlify.app/",
+    "image": "/assets/projects/solotravel-ui.jpg"
+  },
+  {
     "title": "Multiplication Game",
     "description": "An interactive multiplication game designed to help users improve math skills through fun, score-based challenges. It promotes quick thinking and accuracy within a clean, responsive, and user-friendly interface, offering an engaging and effective learning experience.",
     "tech": [
