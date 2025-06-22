@@ -35,6 +35,19 @@
     "image": "/assets/projects/solotravel-ui.jpg"
   },
   {
+    "title": "ToDo",
+    "description": "A simple and clean ToDo application built as part of my learning journey with Django. It allows users to add, edit, and delete tasks, helping me practice Python, Django routing, forms, and templating with HTML and CSS.",
+    "tech": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/ArunPandyanVasam/todo",
+    "demo": "https://todo-lrpq.onrender.com/",
+    "image": "/assets/projects/todo.jpg"
+  },
+  {
     "title": "Multiplication Game",
     "description": "An interactive multiplication game designed to help users improve math skills through fun, score-based challenges. It promotes quick thinking and accuracy within a clean, responsive, and user-friendly interface, offering an engaging and effective learning experience.",
     "tech": [
