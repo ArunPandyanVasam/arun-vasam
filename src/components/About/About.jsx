@@ -13,17 +13,19 @@ const About = () => {
             I have hands-on experience in object-oriented programming, data structures and algorithms, relational and non-relational databases, and RESTful API development. I particularly enjoy solving complex problems, designing clean system architecture, and writing maintainable code.
             Currently, I'm deepening my skills through consistent, structured learning and full stack projects. I'm seeking an opportunity to contribute to a collaborative, engineering-driven environment where I can apply my knowledge, grow with a team, and make a meaningful impact as a developer.`,
 
-    Skills: `• Programming Languages: Python, Java
-             • Core CS: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks, DBMS, Operating Systems
-             • Backend: REST API Development, SQL & NoSQL Databases (MySQL, MongoDB)
+    Skills: `• Programming Languages: Python, Java, C, C++, C#, JavaScript, PHP
+             • Web Development: React.js, AngularJS, HTML, CSS, Bootstrap, Tailwind CSS
+             • Backend & Frameworks: Spring Boot, .NET, Django, Flask, REST API Development
+             • Databases: SQL (MySQL), NoSQL (MongoDB)
+             • Core CS Concepts: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks, DBMS, Operating Systems
              • System Design: Low-Level Design Principles
              • Version Control & Collaboration: Git, GitHub`,
 
-    Tools: `• Development: VS Code, IntelliJ IDEA
+    Tools: `• Development Environments: Visual Studio, VS Code, IntelliJ IDEA, CLion, NetBeans, Eclipse, PyCharm
             • API & Testing: Postman
-            • Database: MySQL Workbench, MongoDB Compass
-            • Deployment: Render, Railway, Netlify, Vercel
-            • Design & PM: Figma, Trello, Jira`,
+            • Database Tools: MongoDB Compass, Azure Data Studio, SQL Developer
+            • Deployment Platforms: Render, Railway, Netlify, Vercel
+            • Design & Project Management: Figma, Jira`,
   };
 
   const renderContent = () =>
