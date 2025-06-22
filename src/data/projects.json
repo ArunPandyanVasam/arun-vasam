@@ -27,9 +27,8 @@
     "title": "SoloTravel UI",
     "description": "SoloTravel UI is a sleek and modern user interface project designed to showcase a travel-themed webpage. It highlights destinations, experiences, and solo travel benefits using a clean React + Vite setup, perfect for design inspiration or front-end portfolio demonstration.",
     "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "React",
+      "Vite"
     ],
     "github": "https://github.com/ArunPandyanVasam/TravelApp-Frontend",
     "demo": "https://solotravel.netlify.app/",
