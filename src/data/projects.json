@@ -1,15 +1,16 @@
 [
   {
-    "title": "Milano Digital Front",
-    "description": "An MVP website concept created for a new hardware and interiors store lacking an online presence. Developed after discovering this during a job interview, the project demonstrated initiative and was well received, even though the store ultimately chose to outsource their website.",
+    "title": "ToDo",
+    "description": "A simple and clean ToDo application built as part of my learning journey with Django. It allows users to add, edit, and delete tasks, helping me practice Python, Django routing, forms, and templating with HTML and CSS.",
     "tech": [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion"
+      "Python",
+      "Django",
+      "HTML",
+      "CSS"
     ],
-    "github": "https://github.com/ArunPandyanVasam/Milano",
-    "demo": "https://milano-digital-front.netlify.app/",
-    "image": "/assets/projects/milano-digital-front.jpg"
+    "github": "https://github.com/ArunPandyanVasam/todo",
+    "demo": "https://todo-lrpq.onrender.com/",
+    "image": "/assets/projects/todo.jpg"
   },
   {
     "title": "Dynamic Surge Price",
@@ -24,6 +25,18 @@
     "image": "/assets/projects/dynamic-surge-price.jpg"
   },
   {
+    "title": "Milano Digital Front",
+    "description": "An MVP website concept created for a new hardware and interiors store lacking an online presence. Developed after discovering this during a job interview, the project demonstrated initiative and was well received, even though the store ultimately chose to outsource their website.",
+    "tech": [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "github": "https://github.com/ArunPandyanVasam/Milano",
+    "demo": "https://milano-digital-front.netlify.app/",
+    "image": "/assets/projects/milano-digital-front.jpg"
+  },
+  {
     "title": "SoloTravel UI",
     "description": "SoloTravel UI is a sleek and modern user interface project designed to showcase a travel-themed webpage. It highlights destinations, experiences, and solo travel benefits using a clean React + Vite setup, perfect for design inspiration or front-end portfolio demonstration.",
     "tech": [
@@ -33,19 +46,6 @@
     "github": "https://github.com/ArunPandyanVasam/TravelApp-Frontend",
     "demo": "https://solotravel.netlify.app/",
     "image": "/assets/projects/solotravel-ui.jpg"
-  },
-  {
-    "title": "ToDo",
-    "description": "A simple and clean ToDo application built as part of my learning journey with Django. It allows users to add, edit, and delete tasks, helping me practice Python, Django routing, forms, and templating with HTML and CSS.",
-    "tech": [
-      "Python",
-      "Django",
-      "HTML",
-      "CSS"
-    ],
-    "github": "https://github.com/ArunPandyanVasam/todo",
-    "demo": "https://todo-lrpq.onrender.com/",
-    "image": "/assets/projects/todo.jpg"
   },
   {
     "title": "Multiplication Game",
