@@ -1,16 +1,15 @@
 [
   {
-    "title": "ToDo",
-    "description": "A simple and clean ToDo application built as part of my learning journey with Django. It allows users to add, edit, and delete tasks, helping me practice Python, Django routing, forms, and templating with HTML and CSS.",
+    "title": "CoLabNest (Coming Soon)",
+    "description": "A collaborative platform designed for students and early-career developers to share ideas, connect with peers, discuss concepts, and build projects together. It supports seamless project ideation, constructive feedback, and real-time collaboration within an engaging community.",
     "tech": [
-      "Python",
+      "React",
       "Django",
-      "HTML",
-      "CSS"
+      "PostgreSQL"
     ],
-    "github": "https://github.com/ArunPandyanVasam/todo",
-    "demo": "https://todo-lrpq.onrender.com/",
-    "image": "/assets/projects/todo.jpg"
+    "github": "https://github.com/ArunPandyanVasam/CoLabNest",
+    "demo": "https://colabnest.netlify.app/",
+    "image": "/assets/projects/colabnest.jpg"
   },
   {
     "title": "Dynamic Surge Price",
@@ -35,6 +34,19 @@
     "github": "https://github.com/ArunPandyanVasam/Milano",
     "demo": "https://milano-digital-front.netlify.app/",
     "image": "/assets/projects/milano-digital-front.jpg"
+  },
+  {
+    "title": "ToDo",
+    "description": "A simple and clean ToDo application built as part of my learning journey with Django. It allows users to add, edit, and delete tasks, helping me practice Python, Django routing, forms, and templating with HTML and CSS.",
+    "tech": [
+      "Python",
+      "Django",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/ArunPandyanVasam/todo",
+    "demo": "https://todo-lrpq.onrender.com/",
+    "image": "/assets/projects/todo.jpg"
   },
   {
     "title": "SoloTravel UI",
