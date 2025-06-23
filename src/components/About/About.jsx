@@ -23,7 +23,7 @@ const About = () => {
 
     Tools: `• Development Environments: Visual Studio, VS Code, IntelliJ IDEA, CLion, NetBeans, Eclipse, PyCharm
             • API & Testing: Postman
-            • Database Tools: MongoDB Compass, Azure Data Studio, SQL Developer
+            • Database Tools: Azure Data Studio, SQL Developer
             • Deployment Platforms: Render, Railway, Netlify, Vercel
             • Design & Project Management: Figma, Jira`,
   };
